@@ -38,6 +38,7 @@ namespace Layers
 
         public void PopLayer()
         {
+            if (savedLayers.Count == 0) return;
             var poppedLayer = savedLayers.Pop();
             poppedLayer.OnLayerPopped(
                 spawnPoint.position, 
@@ -47,7 +48,12 @@ namespace Layers
                     var newPosition = lastPosition;
                     newPosition.y += poppedLayer.Height / 2f;
                     lastPosition = newPosition;
-                    CameraController.Instance.MainCamera.transform.DOLocalMoveY(poppedLayer.Height / 2f, .1f);
+                    
+                    var mainCamera = CameraController.Instance.MainCamera;
+                    mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
+                    {
+                        mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
+                    });
                 });
         }
     }
