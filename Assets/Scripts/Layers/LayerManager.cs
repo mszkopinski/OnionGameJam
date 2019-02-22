@@ -9,6 +9,7 @@ namespace Layers
     public class LayerManager : MonoSingleton<LayerManager>
     {
         [SerializeField] Transform spawnPoint;
+        [SerializeField] Vector2 layerOffset = new Vector2(0f, .5f);
         
         readonly Stack<ILayer> savedLayers = new Stack<ILayer>();
         Vector3 lastPosition;
@@ -26,6 +27,7 @@ namespace Layers
         void Start()
         {
             lastPosition = transform.position;
+            PopLayer();
         }
 
         void Update()
@@ -36,7 +38,7 @@ namespace Layers
             }
         }
 
-        public void PopLayer()
+        void PopLayer(bool instant = false)
         {
             if (savedLayers.Count == 0) return;
             var poppedLayer = savedLayers.Pop();
@@ -46,15 +48,20 @@ namespace Layers
                 () =>
                 {
                     var newPosition = lastPosition;
-                    newPosition.y += poppedLayer.Height / 2f;
+                    newPosition.x += layerOffset.x;
+                    newPosition.y += poppedLayer.Height / 2f + layerOffset.y;
                     lastPosition = newPosition;
-                    
-                    var mainCamera = CameraController.Instance.MainCamera;
-                    mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
+
+                    if (!instant)
                     {
-                        mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
-                    });
-                });
+                        var mainCamera = CameraController.Instance.MainCamera;
+                        mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
+                        {
+                            mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
+                        });
+                    }
+             
+                }, instant);
         }
     }
 }
