@@ -49,7 +49,11 @@ namespace Layers
                     newPosition.y += poppedLayer.Height / 2f;
                     lastPosition = newPosition;
                     
-                    CameraController.Instance.MainCamera.DOShakePosition(.2f, 1f, 2, 160f);
+                    var mainCamera = CameraController.Instance.MainCamera;
+                    mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
+                    {
+                        mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
+                    });
                 });
         }
     }
