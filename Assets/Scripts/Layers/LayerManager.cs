@@ -38,6 +38,7 @@ namespace Layers
 
         public void PopLayer()
         {
+            if (savedLayers.Count == 0) return;
             var poppedLayer = savedLayers.Pop();
             poppedLayer.OnLayerPopped(
                 spawnPoint.position, 

@@ -13,9 +13,8 @@ namespace Layers
 
         void Awake()
         {
-            boxCollider = GetComponent<BoxCollider>();
+            boxCollider = GetComponentInChildren<BoxCollider>();
         }
-
 
         public void OnLayerPushed()
         {
