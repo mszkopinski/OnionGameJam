@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: fec3d69a06106104d8b3c435380341bf
+guid: 78d572626cb06eb4daafb13bdc87ca21
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: tile
+    100000: tileneon
     100002: //RootNode
-    400000: tile
+    400000: tileneon
     400002: //RootNode
     2100000: palette
-    2100002: tileMat
-    2300000: tile
-    3300000: tile
-    4300000: tile
+    2300000: tileneon
+    3300000: tileneon
+    4300000: tileneon
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.03125
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
