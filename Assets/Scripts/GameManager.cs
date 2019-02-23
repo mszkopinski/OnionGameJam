@@ -52,7 +52,8 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void StartNextMove()
     {
-        CheckEndConditions();
+        if (CheckEndConditions())
+            return;
         var currentLayer = LayerManager.Instance.CurrentLayer;
         if (currentLayer != null)
         {
@@ -70,7 +71,7 @@ public class GameManager : MonoSingleton<GameManager>
         }
     }
 
-    public void CheckEndConditions()
+    public bool CheckEndConditions()
     {
         var currentLayer = LayerManager.Instance.CurrentLayer;
         if (currentLayer != null)
@@ -79,8 +80,11 @@ public class GameManager : MonoSingleton<GameManager>
             if (moveQueue.Count <= 1)
             {
                 LayerManager.Instance.PopLayer();
+                return true;
             }
         }
+
+        return false;
     }
     
     public Entity CurrentMove

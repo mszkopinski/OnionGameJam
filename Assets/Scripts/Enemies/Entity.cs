@@ -9,7 +9,7 @@ public abstract class Entity : MonoBehaviour
     [SerializeField] float rotationSpeed = 10f;
         
     public Vector2Int? CurrentTarget { get; set; }
-    public static bool IsMoving { get; protected set; }
+    public bool IsMoving { get; protected set; }
     
     public event Action TargetReached;
     public event Action MoveEnded;
@@ -79,15 +79,15 @@ public abstract class Entity : MonoBehaviour
 
     public virtual void OnMoveStarted()
     {
-        IsMoving = true;
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
+        IsMoving = true;
     }
     
     protected virtual void OnMoveEnded()
     {
-        IsMoving = false;
         MoveEnded?.Invoke();
+        IsMoving = false;
     }
 
     protected virtual void OnEntityDied()

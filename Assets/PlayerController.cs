@@ -28,6 +28,7 @@ public class PlayerController : Entity
     {
         if (CanMove(tilePosition, out var anotherEntity) && IsMoving)
         {
+            IsMoving = false;
             if (!anotherEntity)
             {
                 CurrentTarget = tilePosition;

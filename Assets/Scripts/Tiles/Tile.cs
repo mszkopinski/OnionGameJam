@@ -32,7 +32,7 @@ public class Tile : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (tileRenderer == null || !PlayerController.IsMoving) return;
+        if (tileRenderer == null || !LayerManager.Instance.cachedPlayer.IsMoving) return;
         var newColor = tileRenderer.material.color;
         if (CurrentEntity == null)
         {
@@ -43,7 +43,7 @@ public class Tile : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (tileRenderer == null || !PlayerController.IsMoving) return;
+        if (tileRenderer == null || !LayerManager.Instance.cachedPlayer.IsMoving) return;
         var newColor = tileRenderer.material.color;
         if (IsSelected)
         {
@@ -66,7 +66,7 @@ public class Tile : MonoBehaviour
 
     public void SelectTile()
     {
-        if (tileRenderer == null || !PlayerController.IsMoving) return;
+        if (tileRenderer == null || !LayerManager.Instance.cachedPlayer.IsMoving) return;
         IsSelected = true;    
         var newColor = tileRenderer.material.color;
         if (CurrentEntity == null)
