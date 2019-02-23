@@ -1,46 +1,16 @@
 fileFormatVersion: 2
-guid: c89a116da1695d54db8e38d64f8414a2
+guid: 2323b889adcc9a44ea85a4f8bd379b42
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: ArmLeft
-    100002: ArmLeft_end
-    100004: ArmRight
-    100006: ArmRight_end
-    100008: Body
-    100010: Body2
-    100012: CollarLeft
-    100014: CollarRight
-    100016: Head
-    100018: Head_end
-    100020: HipRight
-    100022: //RootNode
-    100024: LeftHip
-    100026: LegLeft
-    100028: LegLeft_end
-    100030: LegRight
-    100032: LegRight_end
-    100034: Neck
-    400000: ArmLeft
-    400002: ArmLeft_end
-    400004: ArmRight
-    400006: ArmRight_end
-    400008: Body
-    400010: Body2
-    400012: CollarLeft
-    400014: CollarRight
-    400016: Head
-    400018: Head_end
-    400020: HipRight
-    400022: //RootNode
-    400024: LeftHip
-    400026: LegLeft
-    400028: LegLeft_end
-    400030: LegRight
-    400032: LegRight_end
-    400034: Neck
-    7400000: Armature|ArmatureAction
-    9500000: //RootNode
+    100000: johnnycape
+    100002: //RootNode
+    400000: johnnycape
+    400002: //RootNode
+    2100000: palette
+    2300000: johnnycape
+    3300000: johnnycape
+    4300000: johnnycape
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -93,8 +63,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -121,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
