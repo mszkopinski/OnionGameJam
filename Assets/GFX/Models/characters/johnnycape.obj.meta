@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2323b889adcc9a44ea85a4f8bd379b42
+=======
+guid: 7d3dfd6782381f747b260384887d2adc
+>>>>>>> pawel
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:

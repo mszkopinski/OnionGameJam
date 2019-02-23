@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e8fc451c967498240b39c579f6ad6f7b
+=======
+guid: 28d6dc67c8283ef419a00188d91671e1
+>>>>>>> pawel
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
