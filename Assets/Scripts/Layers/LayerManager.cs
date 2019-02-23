@@ -9,11 +9,11 @@ namespace Layers
     public class LayerManager : MonoSingleton<LayerManager>
     {
         public ILayer CurrentLayer { get; private set; }
+        public ILayer PreviousLayer { get; private set; }
         
         [SerializeField] Transform spawnPoint;
-        [SerializeField] Vector2 layerOffset = new Vector2(0f, .5f);
         
-        readonly Stack<ILayer> savedLayers = new Stack<ILayer>();
+        readonly Queue<ILayer> savedLayers = new Queue<ILayer>();
         Vector3 lastPosition;
 
         void Awake()
@@ -21,8 +21,8 @@ namespace Layers
             var layers = GetComponentsInChildren(typeof(ILayer)).Cast<ILayer>();
             foreach (var l in layers)
             {
-                savedLayers.Push(l);
-                l.OnLayerPushed();
+                savedLayers.Enqueue(l);
+                l.OnLayerPopped();
             }
         }
 
@@ -32,27 +32,34 @@ namespace Layers
             PopLayer();
         }
 
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                PopLayer();
-            }
-        }
-
-        void PopLayer(bool instant = false)
+        public void PopLayer(bool instant = false)
         {
             if (savedLayers.Count == 0) return;
-            var poppedLayer = savedLayers.Pop();
+            var poppedLayer = savedLayers.Dequeue();
+            if (CurrentLayer != null)
+            {
+                PreviousLayer = CurrentLayer;
+            }
             CurrentLayer = poppedLayer;
-            poppedLayer.OnLayerPopped(
+            PreviousLayer?.OnLayerPopped();
+            poppedLayer.OnLayerPushed(
                 spawnPoint.position, 
                 lastPosition,
                 () =>
                 {
+                    Vector2Int layerOffset = Vector2Int.zero;
+
+                    var previousLayerPlayerPos = PreviousLayer?.PlayerPosition;
+                    if (previousLayerPlayerPos != null)
+                    {
+                        var nextPlayerPos = CurrentLayer.PlayerPosition;
+                        layerOffset.x = nextPlayerPos.Value.x - previousLayerPlayerPos.Value.x;
+                        layerOffset.y = nextPlayerPos.Value.y - previousLayerPlayerPos.Value.y;
+                    }
+
                     var newPosition = lastPosition;
                     newPosition.x += layerOffset.x;
-                    newPosition.y += poppedLayer.Height / 2f + layerOffset.y;
+                    newPosition.z += layerOffset.y;
                     lastPosition = newPosition;
 
                     if (!instant)
@@ -61,6 +68,7 @@ namespace Layers
                         mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
                         {
                             mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
+                            PreviousLayer.Destroy();
                         });
                     }
              

@@ -1,5 +1,6 @@
 using System;
 using Layers;
+using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -30,7 +31,7 @@ public class Tile : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (tileRenderer == null) return;
+        if (tileRenderer == null || !PlayerController.IsMoving) return;
         var newColor = tileRenderer.material.color;
         if (CurrentEntity == null)
         {
@@ -41,18 +42,42 @@ public class Tile : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (tileRenderer == null || IsSelected) return;
+        if (tileRenderer == null || !PlayerController.IsMoving) return;
         var newColor = tileRenderer.material.color;
-        newColor = defaultMatColor;
+        if (IsSelected)
+        {
+            if (CurrentEntity != null)
+            {
+                newColor = Utils.Extensions.HighlightedTile;
+            }
+            else
+            {
+                newColor = defaultMatColor;
+                newColor.g += .3f;
+            }
+        }
+        else
+        {
+            newColor = defaultMatColor;
+        }
         tileRenderer.material.color = newColor;
     }
 
     public void SelectTile()
     {
-        if (tileRenderer == null) return;
-        IsSelected = true;
+        if (tileRenderer == null || !PlayerController.IsMoving) return;
+        IsSelected = true;    
         var newColor = tileRenderer.material.color;
-        newColor = CurrentEntity == null ? Utils.Extensions.SelectedTile : Color.red;
+        if (CurrentEntity == null)
+        {
+            newColor = defaultMatColor;
+            newColor.g += .3f;
+
+        }
+        else
+        {
+            newColor = Color.red;
+        }
         tileRenderer.material.color = newColor;
     }
 
