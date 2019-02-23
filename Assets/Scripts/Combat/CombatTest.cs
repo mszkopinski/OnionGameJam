@@ -80,9 +80,11 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] == 0) {
 					currentState[playerPos.x, (playerPos + Vector2Int.up).y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == playerPos.x && (playerPos + Vector2Int.up).y == bot.pos.y);
 				}
 				else if (currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] == 1) {
 					currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] = 4;
+					bots.Find((bot) => playerPos.x == bot.pos.x && (playerPos + Vector2Int.up).y == bot.pos.y).pos += Vector2Int.up;
 					currentState[playerPos.x, (playerPos + Vector2Int.up).y] = 1;
 				}
 			}
@@ -93,6 +95,7 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] == 0) {
 					currentState[playerPos.x, (playerPos + Vector2Int.up).y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == playerPos.x && (playerPos + Vector2Int.up).y == bot.pos.y);
 				}
 				else if (currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] == 1) {
 					currentState[playerPos.x, (playerPos + Vector2Int.up + Vector2Int.up).y] = 6;
@@ -127,9 +130,11 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] == 0) {
 					currentState[playerPos.x, (playerPos + Vector2Int.down).y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == playerPos.x && (playerPos + Vector2Int.down).y == bot.pos.y);
 				}
 				else if (currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] == 1) {
 					currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] = 4;
+					bots.Find((bot) => playerPos.x == bot.pos.x && (playerPos + Vector2Int.down).y == bot.pos.y).pos += Vector2Int.down;
 					currentState[playerPos.x, (playerPos + Vector2Int.down).y] = 1;
 				}
 			}
@@ -140,6 +145,7 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] == 0) {
 					currentState[playerPos.x, (playerPos + Vector2Int.down).y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == playerPos.x && (playerPos + Vector2Int.down).y == bot.pos.y);
 				}
 				else if (currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] == 1) {
 					currentState[playerPos.x, (playerPos + Vector2Int.down + Vector2Int.down).y] = 6;
@@ -174,9 +180,11 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] == 0) {
 					currentState[(playerPos + Vector2Int.left).x, playerPos.y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == (playerPos + Vector2Int.left).x && playerPos.y == bot.pos.y);
 				}
 				else if (currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] == 1) {
 					currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] = 4;
+					bots.Find((bot) => (playerPos + Vector2Int.left).x == bot.pos.x && playerPos.y == bot.pos.y).pos += Vector2Int.left;
 					currentState[(playerPos + Vector2Int.left).x, playerPos.y] = 1;
 				}
 			}
@@ -187,6 +195,7 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] == 0) {
 					currentState[(playerPos + Vector2Int.left).x, playerPos.y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == (playerPos + Vector2Int.left).x && playerPos.y == bot.pos.y);
 				}
 				else if (currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] == 1) {
 					currentState[(playerPos + Vector2Int.left + Vector2Int.left).x, playerPos.y] = 6;
@@ -221,10 +230,11 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] == 0) {
 					currentState[(playerPos + Vector2Int.right).x, playerPos.y] = 1;
-					bots.Find(bot => bot.pos.x == (playerPos + Vector2Int.right).x && playerPos.y).Remove();
+					bots.RemoveAll(bot => bot.pos.x == (playerPos + Vector2Int.right).x && playerPos.y == bot.pos.y);
 				}
 				else if (currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] == 1) {
 					currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] = 4;
+					bots.Find((bot) => (playerPos + Vector2Int.right).x == bot.pos.x && playerPos.y == bot.pos.y).pos += Vector2Int.right;
 					currentState[(playerPos + Vector2Int.right).x, playerPos.y] = 1;
 				}
 				DoSomeAI();
@@ -236,6 +246,7 @@ public class CombatTest : SerializedMonoBehaviour {
 				//dodac mechanizm kolejkowania popchniecia
 				if (currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] == 0) {
 					currentState[(playerPos + Vector2Int.right).x, playerPos.y] = 1;
+					bots.RemoveAll(bot => bot.pos.x == (playerPos + Vector2Int.right).x && playerPos.y == bot.pos.y);
 				}
 				else if (currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] == 1) {
 					currentState[(playerPos + Vector2Int.right + Vector2Int.right).x, playerPos.y] = 6;
@@ -243,6 +254,9 @@ public class CombatTest : SerializedMonoBehaviour {
 				}
 			}
 			RefreshScene();
+		}
+		if (currentState[playerPos.x, playerPos.y] == 7 || currentState[playerPos.x, playerPos.y] == 3) {
+			Debug.Log("YOU WIN");
 		}
 	}
 
@@ -252,32 +266,60 @@ public class CombatTest : SerializedMonoBehaviour {
 			int distanceY = 0;
 
 			if (bot.pos + Vector2Int.up == playerPos) {
-				currentState[playerPos.x, playerPos.y] = 1;
+				if (currentState[playerPos.x, playerPos.y] == 7) {
+					currentState[playerPos.x, playerPos.y] = 3;
+				} else {
+					currentState[playerPos.x, playerPos.y] = 1;	
+				}
 				playerPos += Vector2Int.up;
+				if (currentState[playerPos.x, playerPos.y] == 3) {
+					Debug.Log("YOU WIN");
+				}
 				if (currentState[playerPos.x, playerPos.y] == 0) {
 					Debug.Log("GAME OVER");
 				} else {
 					currentState[playerPos.x, playerPos.y] = 2;
 				}
 			} else if (bot.pos + Vector2Int.down == playerPos) {
-				currentState[playerPos.x, playerPos.y] = 1;
+				if (currentState[playerPos.x, playerPos.y] == 7) {
+					currentState[playerPos.x, playerPos.y] = 3;
+				} else {
+					currentState[playerPos.x, playerPos.y] = 1;	
+				}
 				playerPos += Vector2Int.down;
+				if (currentState[playerPos.x, playerPos.y] == 3) {
+					Debug.Log("YOU WIN");
+				}
 				if (currentState[playerPos.x, playerPos.y] == 0) {
 					Debug.Log("GAME OVER");
 				} else {
 					currentState[playerPos.x, playerPos.y] = 2;
 				}
 			} else if (bot.pos + Vector2Int.right == playerPos) {
-				currentState[playerPos.x, playerPos.y] = 1;
+				if (currentState[playerPos.x, playerPos.y] == 7) {
+					currentState[playerPos.x, playerPos.y] = 3;
+				} else {
+					currentState[playerPos.x, playerPos.y] = 1;	
+				}
 				playerPos += Vector2Int.right;
+				if (currentState[playerPos.x, playerPos.y] == 3) {
+					Debug.Log("YOU WIN");
+				}
 				if (currentState[playerPos.x, playerPos.y] == 0) {
 					Debug.Log("GAME OVER");
 				} else {
 					currentState[playerPos.x, playerPos.y] = 2;
 				}
 			} else if (bot.pos + Vector2Int.left == playerPos) {
-				currentState[playerPos.x, playerPos.y] = 1;
+				if (currentState[playerPos.x, playerPos.y] == 7) {
+					currentState[playerPos.x, playerPos.y] = 3;
+				} else {
+					currentState[playerPos.x, playerPos.y] = 1;	
+				}
 				playerPos += Vector2Int.left;
+				if (currentState[playerPos.x, playerPos.y] == 3) {
+					Debug.Log("YOU WIN");
+				}
 				if (currentState[playerPos.x, playerPos.y] == 0) {
 					Debug.Log("GAME OVER");
 				} else {
