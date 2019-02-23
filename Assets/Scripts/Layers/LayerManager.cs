@@ -10,8 +10,8 @@ namespace Layers
     {
         public ILayer CurrentLayer { get; private set; }
         public ILayer PreviousLayer { get; private set; }
-        
-        [SerializeField] Transform spawnPoint;
+
+        public PlayerController cachedPlayer { get; set; }
         
         readonly Queue<ILayer> savedLayers = new Queue<ILayer>();
         Vector3 lastPosition;
@@ -22,7 +22,7 @@ namespace Layers
             foreach (var l in layers)
             {
                 savedLayers.Enqueue(l);
-                l.OnLayerPopped();
+                ((MonoBehaviour)l).gameObject.SetActive(false);
             }
         }
 
@@ -35,44 +35,74 @@ namespace Layers
         public void PopLayer(bool instant = false)
         {
             if (savedLayers.Count == 0) return;
-            var poppedLayer = savedLayers.Dequeue();
+            
             if (CurrentLayer != null)
             {
                 PreviousLayer = CurrentLayer;
             }
+
+            var poppedLayer = savedLayers.Dequeue();
             CurrentLayer = poppedLayer;
-            PreviousLayer?.OnLayerPopped();
+            Tile cachedTile = null;
+            
+            var layerOffset = Vector2Int.zero;
+            var previousLayerPlayerPos = PreviousLayer?.PlayerPosition;
+            if (previousLayerPlayerPos != null)
+            {
+                var nextPlayerPos = CurrentLayer.GetPlayerTilePosition();
+                if (nextPlayerPos != null)
+                {
+                    layerOffset.x = previousLayerPlayerPos.Value.x - nextPlayerPos.Value.x;
+                    layerOffset.y = previousLayerPlayerPos.Value.y - nextPlayerPos.Value.y;
+                    
+                    cachedTile = PreviousLayer?.GetTileAtPosition(previousLayerPlayerPos.Value);
+                    if (cachedTile != null)
+                    {
+                        cachedTile.transform.SetParent(null);
+                    }
+                }
+            }
+
+            var newPosition = lastPosition;
+            newPosition.x += layerOffset.x;
+            newPosition.z += layerOffset.y;
+            lastPosition = newPosition;
+
+            var spawnPos = newPosition;
+            spawnPos.x += 5f;
+            spawnPos.z += 5f;
+            
             poppedLayer.OnLayerPushed(
-                spawnPoint.position, 
-                lastPosition,
+                spawnPos, 
+                newPosition,
                 () =>
                 {
-                    Vector2Int layerOffset = Vector2Int.zero;
-
-                    var previousLayerPlayerPos = PreviousLayer?.PlayerPosition;
-                    if (previousLayerPlayerPos != null)
+                    if (cachedTile != null)
                     {
-                        var nextPlayerPos = CurrentLayer.PlayerPosition;
-                        layerOffset.x = nextPlayerPos.Value.x - previousLayerPlayerPos.Value.x;
-                        layerOffset.y = nextPlayerPos.Value.y - previousLayerPlayerPos.Value.y;
+                        cachedPlayer.transform.SetParent(null);
                     }
-
-                    var newPosition = lastPosition;
-                    newPosition.x += layerOffset.x;
-                    newPosition.z += layerOffset.y;
-                    lastPosition = newPosition;
-
+                    PreviousLayer?.OnLayerPopped(() =>
+                    {
+                        cachedPlayer.RevokeEvents();
+                        cachedPlayer.transform.SetParent(((Layer) CurrentLayer).transform);
+                        
+                        if (cachedTile != null)
+                        {
+                            cachedTile.transform.SetParent(((MonoBehaviour) CurrentLayer).transform);
+                            CurrentLayer.SetTile(cachedTile.CurrentPosition, cachedTile);
+                        }
+                    }, layerOffset);
+                    
                     if (!instant)
                     {
                         var mainCamera = CameraController.Instance.MainCamera;
                         mainCamera.DOShakePosition(.2f, 1f, 2, 160f).OnComplete(() =>
                         {
                             mainCamera.transform.SetPosition(null, mainCamera.transform.position.y + poppedLayer.Height / 2f, null);
-                            PreviousLayer.Destroy();
                         });
                     }
              
-                }, instant);
+                }, cachedPlayer, instant);
         }
     }
 }

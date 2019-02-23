@@ -7,7 +7,8 @@ public class Tile : MonoBehaviour
 {
     public bool IsSelected { get; private set; }
     
-    public Vector2Int CurrentPosition { get; private set; }
+    public TileType Type { get; private set; }
+    public Vector2Int CurrentPosition => new Vector2Int(Mathf.RoundToInt(transform.localPosition.x), Mathf.RoundToInt(transform.localPosition.z));
     public Entity CurrentEntity => LayerManager.Instance.CurrentLayer != null
         ? LayerManager.Instance.CurrentLayer.GetEntityAtPosition(CurrentPosition)
         : null;
@@ -16,12 +17,12 @@ public class Tile : MonoBehaviour
     Color defaultMatColor;
     Renderer tileRenderer;
     
-    public void Initialize(Vector2Int position, Action<Vector2Int> tilePressed)
+    public void Initialize(Action<Vector2Int> tilePressed, TileType tileType)
     {
-        CurrentPosition = position;
         tilePressedCallback = tilePressed;
         tileRenderer = GetComponentInChildren<Renderer>();
         defaultMatColor = tileRenderer.material.color;
+        Type = tileType;
     }
     
     void OnMouseDown()
