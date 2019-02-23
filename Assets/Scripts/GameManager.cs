@@ -80,6 +80,7 @@ public class GameManager : MonoSingleton<GameManager>
             var moveQueue = currentLayer.EnemiesMoveQueue;
             if (moveQueue.Count <= 1)
             {
+                lastMoveIndex = 0;
                 LayerManager.Instance.PopLayer();
                 return true;
             }
