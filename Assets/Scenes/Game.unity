@@ -236,7 +236,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -999
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -527,6 +527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 8731852962231863797, guid: 60dea15432652904793fc212a217a65d,
     type: 3}
+  rounds: 0
+  RoundsLabel: {fileID: 0}
 --- !u!1 &1691937808
 GameObject:
   m_ObjectHideFlags: 0
