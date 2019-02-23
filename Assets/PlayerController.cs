@@ -21,6 +21,11 @@ public class PlayerController : Entity
         }
     }
 
+    public void RevokeEvents()
+    {
+        LayerManager.Instance.CurrentLayer.TilePressed += OnTilePressed;
+    }
+
     void OnTilePressed(Vector2Int tilePosition)
     {
         if (CanMove(tilePosition, out var anotherEntity) && IsMoving)

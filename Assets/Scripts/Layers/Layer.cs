@@ -11,7 +11,7 @@ namespace Layers
 {
     public class Layer : SerializedMonoBehaviour, ILayer
     {
-        public event Action<Vector2Int> TilePressed; 
+        public event Action<Vector2Int> TilePressed;
         public Vector2Int? PlayerPosition => cachedPlayer?.CurrentPosition;
 
         [TableMatrix, SerializeField] TileType[,] tiles;
@@ -27,9 +27,9 @@ namespace Layers
         public float Height { get; private set; }
 
         int previousGolemsNumber, previousWolfsNumber;
-        PlayerController cachedPlayer;
         readonly List<Tile> cachedTiles = new List<Tile>();
         readonly List<Entity> cachedEntities = new List<Entity>();
+        PlayerController cachedPlayer;
         
         void OnValidate()
         {
@@ -55,14 +55,26 @@ namespace Layers
             }
         }
         
-        public void OnLayerPopped()
+        public void OnLayerPopped(Action callback, Vector2Int layerOffset)
         {
-            gameObject.SetActive(false);
+            transform.DOMoveY(transform.position.y - 20f, .5f).OnComplete(() =>
+            {
+                gameObject.SetActive(false);
+                callback?.Invoke();
+
+                var mainCamera = CameraController.Instance.MainCamera;
+                var newCameraPos = mainCamera.transform.position;
+                newCameraPos.x += layerOffset.x;
+                newCameraPos.z += layerOffset.y;
+                mainCamera.transform.DOMove(newCameraPos, 1.5f);
+            });
         }
 
-        public void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false)
+        public void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController = null, bool instant = false)
         {
             gameObject.SetActive(true);
+            cachedPlayer = playerController;
+            
             SpawnTiles();
             transform.DOLocalMove(spawnPoint, 0f)
                 .OnComplete(() =>
@@ -76,7 +88,7 @@ namespace Layers
                         });
                 });
         }
-
+        
         void SpawnTiles()
         {
             int width = tiles.GetLength(0), height = tiles.GetLength(1);
@@ -93,7 +105,7 @@ namespace Layers
                         var temp = Instantiate(groundTile, transform);
                         temp.transform.SetPosition(x, transform.position.y, y);
                         var tileComponent = temp.AddComponent<Tile>();
-                        tileComponent.Initialize(new Vector2Int(x, y), OnTilePressed);
+                        tileComponent.Initialize(OnTilePressed, tiles[x, y]);
                         cachedTiles.Add(tileComponent);
                         
                     }
@@ -107,15 +119,15 @@ namespace Layers
                         temp.transform.SetPosition(x, transform.position.y, y);
                         var entity = temp.GetComponent(typeof(Entity));
                         if (entity == null) continue;
+                        if (cachedPlayer == null && entity is PlayerController playerController)
+                        {
+                            LayerManager.Instance.cachedPlayer = playerController;
+                            cachedPlayer = LayerManager.Instance.cachedPlayer;
+                        }
                         cachedEntities.Add((Entity)entity);
                     }
                 }
             }
-            
-            cachedPlayer = cachedPlayer != null
-                ? cachedPlayer
-                : cachedEntities.FirstOrDefault(e => e is PlayerController) as PlayerController;
-            if (cachedPlayer == null) return;
             
             EnemiesMoveQueue.Clear();
             EnemiesMoveQueue.Add(cachedPlayer);
@@ -195,14 +207,15 @@ namespace Layers
             cachedTiles.ForEach(t => t.DeselectTile());
         }
 
-        public void Destroy()
-        {
-            gameObject.SetActive(false);
-        }
-
         public Entity GetEntityAtPosition(Vector2Int position)
         {
             return cachedEntities.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+        }
+        
+        public void SetTile(Vector2Int position, Tile tile)
+        {
+            tiles[position.x, position.y] = tile.Type;
+            cachedTiles.Add(tile);
         }
         
         public Tile GetTileAtPosition(Vector2Int position)
@@ -249,10 +262,10 @@ namespace Layers
         event Action<Vector2Int> TilePressed;
         List<Entity> EnemiesMoveQueue { get; }
         float Height { get; }
-        void OnLayerPopped();
-        void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false);
+        void OnLayerPopped(Action callback, Vector2Int layerOffset);
+        void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController, bool instant = false);
         void DeselectAllTiles();
-        void Destroy();
+        void SetTile(Vector2Int position, Tile tile);
         Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
         Tile GetTileAtPosition(Vector2Int position);
