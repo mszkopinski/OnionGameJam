@@ -29,11 +29,13 @@ public class GameManager : MonoSingleton<GameManager>
         }
     }
 
+    //This Method display win screen
     public void WinLevel ()
     {
         completeLevelUI.SetActive(true);
     }
 
+    //This Method cause lose and restart level
     public void LoseLevel()
     {
         if (!gameHasEnded)
