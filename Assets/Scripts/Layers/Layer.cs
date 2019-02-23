@@ -147,12 +147,14 @@ namespace Layers
             });
             
             cachedPlayer.MoveStarted += RefreshPlayerPossibleMoves;
+            cachedPlayer.Pushed += RefreshPlayerPossibleMoves;
             GameManager.Instance.StartNextMove();
         }
 
         void RefreshPlayerPossibleMoves()
         {
             var playerPos = cachedPlayer.CurrentPosition;
+            DeselectAllTiles();
 
             var leftTile = cachedTiles.FirstOrDefault(t =>
                 t.CurrentPosition.x == playerPos.x - 1 && t.CurrentPosition.y == playerPos.y);
@@ -209,7 +211,12 @@ namespace Layers
 
         public Entity GetEntityAtPosition(Vector2Int position)
         {
-            return cachedEntities.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+            var entity = cachedEntities.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+            if (cachedPlayer.CurrentPosition == position)
+            {
+                entity = cachedPlayer;
+            }
+            return entity;
         }
         
         public void SetTile(Vector2Int position, Tile tile)

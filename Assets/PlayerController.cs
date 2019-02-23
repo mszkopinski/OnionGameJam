@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class PlayerController : Entity
 {
-    public static bool IsMoving { get; private set; }
-
     void Awake()
     {
         if (LayerManager.Instance.CurrentLayer != null)
@@ -41,17 +39,10 @@ public class PlayerController : Entity
             }
         }
     }
-    
-    public override void OnMoveStarted()
-    {
-        base.OnMoveStarted();
-        IsMoving = true;
-    }
 
     protected override void OnMoveEnded()
     {
         base.OnMoveEnded();
-        IsMoving = false;
         LayerManager.Instance.CurrentLayer?.DeselectAllTiles();
     }
 }

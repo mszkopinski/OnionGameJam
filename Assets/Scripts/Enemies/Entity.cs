@@ -9,13 +9,16 @@ public abstract class Entity : MonoBehaviour
     [SerializeField] float rotationSpeed = 10f;
         
     public Vector2Int? CurrentTarget { get; set; }
+    public static bool IsMoving { get; protected set; }
     
     public event Action TargetReached;
     public event Action MoveEnded;
     public event Action MoveStarted;
+    public event Action Pushed;
     public event Action Died;
 
     public Vector2Int CurrentPosition => new Vector2Int(Mathf.RoundToInt(transform.localPosition.x), Mathf.RoundToInt(transform.localPosition.z));
+    public Vector2Int PreviousPosition { get; protected set; }
     
     Vector3 lookDirection;
     Quaternion lookRotation;
@@ -33,9 +36,16 @@ public abstract class Entity : MonoBehaviour
         {
             OnTargetReached();
             var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
+            var entityNextToThis = LayerManager.Instance.CurrentLayer?.GetEntityAtPosition(CurrentPosition);            
             if (currentTile == null)
             {
                 OnEmptyPlaceReached();
+            }
+
+            if (entityNextToThis != null && !ReferenceEquals(entityNextToThis, this))
+            {
+                var direction = entityNextToThis.CurrentPosition - PreviousPosition;
+                entityNextToThis.Push(direction);
             }
 
             CurrentTarget = null;
@@ -57,14 +67,27 @@ public abstract class Entity : MonoBehaviour
         OnMoveEnded();
     }
 
-    protected virtual void OnMoveEnded()
+    protected virtual void OnPushed()
     {
-        MoveEnded?.Invoke();
+        Pushed?.Invoke();
+        var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
+        if (currentTile == null)
+        {
+            OnEmptyPlaceReached();
+        }
     }
-    
+
     public virtual void OnMoveStarted()
     {
+        IsMoving = true;
         MoveStarted?.Invoke();
+        PreviousPosition = CurrentPosition;
+    }
+    
+    protected virtual void OnMoveEnded()
+    {
+        IsMoving = false;
+        MoveEnded?.Invoke();
     }
 
     protected virtual void OnEntityDied()
@@ -90,6 +113,7 @@ public abstract class Entity : MonoBehaviour
         transform.DOLocalMoveX(CurrentPosition.x + direction.x, pushTime);
         transform.DOLocalMoveZ(CurrentPosition.y + direction.y, pushTime).OnComplete(() =>
         {
+            OnPushed();
             pushedCallback?.Invoke();
             var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
             if (currentTile != null)
@@ -108,6 +132,7 @@ public abstract class Entity : MonoBehaviour
 
     void OnEmptyPlaceReached()
     {
+        IsMoving = false;
         transform.DOLocalMoveY(CurrentPosition.y - 10f, .2f).SetEase(Ease.InOutSine).SetDelay(0.6f)
             .OnComplete(() => { transform.DOScale(0f, .1f).OnComplete(OnEntityDied); });
     }
