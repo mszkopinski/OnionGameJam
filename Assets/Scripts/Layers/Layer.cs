@@ -12,7 +12,8 @@ namespace Layers
     public class Layer : SerializedMonoBehaviour, ILayer
     {
         public event Action<Vector2Int> TilePressed; 
-        
+        public Vector2Int? PlayerPosition => cachedPlayer?.CurrentPosition;
+
         [TableMatrix, SerializeField] TileType[,] tiles;
         [SerializeField] List<TileWithPosition> moveQueue = new List<TileWithPosition>();
 
@@ -21,6 +22,8 @@ namespace Layers
         [SerializeField] int layerHeight;
         
         public bool IsSpawned { get; private set; }
+        public List<Entity> EnemiesMoveQueue { get; } = new List<Entity>();
+
         public float Height { get; private set; }
 
         int previousGolemsNumber, previousWolfsNumber;
@@ -52,12 +55,12 @@ namespace Layers
             }
         }
         
-        public void OnLayerPushed()
+        public void OnLayerPopped()
         {
             gameObject.SetActive(false);
         }
 
-        public void OnLayerPopped(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false)
+        public void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false)
         {
             gameObject.SetActive(true);
             SpawnTiles();
@@ -96,7 +99,11 @@ namespace Layers
                     }
                     if (entityTile != null)
                     {
-                        var temp = Instantiate(entityTile, transform);
+                        var temp = Instantiate(entityTile);
+                        if (tileType != TileType.Player)
+                        {
+                            temp.transform.SetParent(transform);
+                        }
                         temp.transform.SetPosition(x, transform.position.y, y);
                         var entity = temp.GetComponent(typeof(Entity));
                         if (entity == null) continue;
@@ -109,14 +116,31 @@ namespace Layers
                 ? cachedPlayer
                 : cachedEntities.FirstOrDefault(e => e is PlayerController) as PlayerController;
             if (cachedPlayer == null) return;
-            cachedPlayer.TargetReached += RefreshPlayerPossibleMoves;
-            RefreshPlayerPossibleMoves();
+            
+            EnemiesMoveQueue.Clear();
+            EnemiesMoveQueue.Add(cachedPlayer);
+            moveQueue.ForEach(move =>
+            {
+                var entity = cachedEntities.FirstOrDefault(e => e.CurrentPosition == move.Position);
+                if (entity != null && !EnemiesMoveQueue.Contains(entity))
+                {
+                    EnemiesMoveQueue.Add(entity);
+                    entity.Died += () =>
+                    {
+                        EnemiesMoveQueue.Remove(entity);
+                        cachedEntities.Remove(entity);
+                        GameManager.Instance.CheckEndConditions();
+                    };
+                }
+            });
+            
+            cachedPlayer.MoveStarted += RefreshPlayerPossibleMoves;
+            GameManager.Instance.StartNextMove();
         }
 
         void RefreshPlayerPossibleMoves()
         {
             var playerPos = cachedPlayer.CurrentPosition;
-            DeselectAllTiles();
 
             var leftTile = cachedTiles.FirstOrDefault(t =>
                 t.CurrentPosition.x == playerPos.x - 1 && t.CurrentPosition.y == playerPos.y);
@@ -158,7 +182,9 @@ namespace Layers
                 case TileType.EndPoint:
                     return new Tuple<GameObject, GameObject>(null, null);
                 case TileType.Player:
-                    return new Tuple<GameObject, GameObject>(tilePrefab, GameManager.Instance.PlayerPrefab);
+                    return new Tuple<GameObject, 
+                        GameObject>(LayerManager.Instance.PreviousLayer == null ? tilePrefab : null, 
+                        LayerManager.Instance.PreviousLayer == null ? GameManager.Instance.PlayerPrefab : null);
             }
 
             return null;
@@ -169,9 +195,32 @@ namespace Layers
             cachedTiles.ForEach(t => t.DeselectTile());
         }
 
+        public void Destroy()
+        {
+            gameObject.SetActive(false);
+        }
+
         public Entity GetEntityAtPosition(Vector2Int position)
         {
             return cachedEntities.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+        }
+        
+        public Tile GetTileAtPosition(Vector2Int position)
+        {
+            return cachedTiles.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+        }
+
+        public Vector2Int? GetPlayerTilePosition()
+        {
+            Vector2Int? pos = null;
+            tiles.ForEach((t, i) =>
+            {
+                if (t == TileType.Player)
+                {
+                    pos = i;
+                }
+            });
+            return pos;
         }
 
         protected virtual void OnTilePressed(Vector2Int tilePosition)
@@ -198,11 +247,16 @@ namespace Layers
     public interface ILayer
     {
         event Action<Vector2Int> TilePressed;
+        List<Entity> EnemiesMoveQueue { get; }
         float Height { get; }
-        void OnLayerPushed();
-        void OnLayerPopped(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false);
+        void OnLayerPopped();
+        void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, bool instant = false);
         void DeselectAllTiles();
+        void Destroy();
+        Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
+        Tile GetTileAtPosition(Vector2Int position);
+        Vector2Int? GetPlayerTilePosition();
     }
 }
 
