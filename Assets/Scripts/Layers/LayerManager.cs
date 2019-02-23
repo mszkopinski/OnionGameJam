@@ -8,6 +8,8 @@ namespace Layers
 {
     public class LayerManager : MonoSingleton<LayerManager>
     {
+        public ILayer CurrentLayer { get; private set; }
+        
         [SerializeField] Transform spawnPoint;
         [SerializeField] Vector2 layerOffset = new Vector2(0f, .5f);
         
@@ -42,6 +44,7 @@ namespace Layers
         {
             if (savedLayers.Count == 0) return;
             var poppedLayer = savedLayers.Pop();
+            CurrentLayer = poppedLayer;
             poppedLayer.OnLayerPopped(
                 spawnPoint.position, 
                 lastPosition,

@@ -3,21 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-//sciagawka, nie uzywac w kodzie bo dzieja sie rzeczy niestworzone
-public enum TileType {
-	Empty 	= 0,
-	Solid 	= 1,
-	Player 	= 2,
-	Exit 	= 3,
-	Wolf 	= 4,
-	Golem 	= 5,
-	Passive = 6,
-	ExitWithPlayer = 7,
-	ExitWithWolf = 8,
-	ExitWithGolem = 9,
-	ExitWithPassive = 10
-}
-
 public class CombatTest : SerializedMonoBehaviour {
 	public class Bot {
 		public Vector2Int pos;
