@@ -5,7 +5,7 @@ using Layers;
 using Utils;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoSingleton<GameManager>
 {
@@ -15,6 +15,8 @@ public class GameManager : MonoSingleton<GameManager>
     public TextMeshProUGUI RoundsLabel = null;
 
     public GameObject completeLevelUI;
+
+    bool gameHasEnded = false;
 
     public void Start()
     {
@@ -28,9 +30,24 @@ public class GameManager : MonoSingleton<GameManager>
         }
     }
 
-    public void CompleteLevel ()
+    public void WinLevel ()
     {
         completeLevelUI.SetActive(true);
+    }
+
+    public void LoseLevel()
+    {
+        if (!gameHasEnded)
+        {
+            gameHasEnded = true;
+            Invoke("Restart", 2f);
+            
+        }
+    }
+
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     int lastMoveIndex = -1;
