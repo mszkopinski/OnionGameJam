@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 2323b889adcc9a44ea85a4f8bd379b42
-=======
-guid: 7d3dfd6782381f747b260384887d2adc
->>>>>>> pawel
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -15,6 +11,7 @@ ModelImporter:
     2300000: johnnycape
     3300000: johnnycape
     4300000: johnnycape
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -68,7 +65,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -95,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
