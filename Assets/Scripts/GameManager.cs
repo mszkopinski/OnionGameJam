@@ -1,8 +1,20 @@
-﻿using UnityEngine;
-using Utils;
+﻿using Utils;
+using TMPro;
+
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    [SerializeField] public GameObject PlayerPrefab;
+    public int rounds = 0;
+    public TextMeshProUGUI RoundsLabel = null;
+
+    public void Start()
+    {
+        if(RoundsLabel)
+        {
+            RoundsLabel.text = "ROUNDS: " + rounds;
+        }
+        
+    }
+
 
 }
