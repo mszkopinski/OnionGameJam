@@ -24,6 +24,16 @@ public class PlayerController : Entity
         LayerManager.Instance.CurrentLayer.TilePressed += OnTilePressed;
     }
 
+    protected override void OnTargetReached()
+    {
+        base.OnTargetReached();
+        var tile = LayerManager.Instance.CurrentLayer.GetTileAtPosition(CurrentPosition);
+        if (tile != null && tile.Type == TileType.EndPoint)
+        {
+            LayerManager.Instance.PopLayer();
+        }
+    }
+
     void OnTilePressed(Vector2Int tilePosition)
     {
         if (CanMove(tilePosition, out var anotherEntity) && IsMoving)

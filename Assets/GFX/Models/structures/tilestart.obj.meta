@@ -8,6 +8,7 @@ ModelImporter:
     400000: tilestart
     400002: //RootNode
     2100000: palette
+    2100002: tilestartMat
     2300000: tilestart
     3300000: tilestart
     4300000: tilestart
