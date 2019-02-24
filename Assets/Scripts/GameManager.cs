@@ -59,7 +59,6 @@ public class GameManager : MonoSingleton<GameManager>
         if (CheckEndConditions())
         {
             currentLayer = null;
-            Debug.Log(" NO I CHUJ");
             LayerManager.Instance.PopLayer();
             return;
         }
@@ -77,7 +76,6 @@ public class GameManager : MonoSingleton<GameManager>
         
         var nextEntity = moveQueue.ElementAtOrDefault(lastMoveIndex);
         if (nextEntity == null) return;
-        Debug.Log(currentLayer + " enemies queue count: " + moveQueue.Count + ". Current move " + nextEntity);
         currentMove = nextEntity;
         if (currentMove is PlayerController)
         {

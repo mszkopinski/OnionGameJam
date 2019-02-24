@@ -58,7 +58,6 @@ public class Tile : MonoBehaviour
 
     void OnMouseOver()
     {
-        Debug.Log(LayerManager.Instance.cachedPlayer.IsMoving);
         if (tileRenderer == null || !LayerManager.Instance.cachedPlayer.IsMoving) return;
         var newColor = tileRenderer.material.color;
         if (CurrentEntity == null)

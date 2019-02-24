@@ -72,8 +72,9 @@ namespace Layers
         {
             transform.DOMoveY(transform.position.y - 20f, .5f).OnComplete(() =>
             {
-                gameObject.SetActive(false);
                 callback?.Invoke();
+
+                gameObject.SetActive(false);
 
                 var mainCamera = CameraController.Instance.MainCamera;
                 var newCameraPos = mainCamera.transform.position;
@@ -162,7 +163,7 @@ namespace Layers
             cachedPlayer.MoveStarted += RefreshPlayerPossibleMoves;
             cachedPlayer.Pushed += RefreshPlayerPossibleMoves;
         }
-
+        
         public void RefreshPlayerPossibleMoves()
         {
             DeselectAllTiles();

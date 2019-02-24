@@ -18,7 +18,7 @@ public class PlayerController : Entity
             LayerManager.Instance.CurrentLayer.TilePressed -= OnTilePressed;
         }
     }
-
+    
     public void RevokeEvents()
     {
         LayerManager.Instance.CurrentLayer.TilePressed += OnTilePressed;
@@ -32,6 +32,12 @@ public class PlayerController : Entity
         {
             LayerManager.Instance.PopLayer();
         }
+    }
+
+    protected override void OnEntityDied()
+    {
+        base.OnEntityDied();
+        LayerManager.Instance.PopLayer();
     }
 
     void OnTilePressed(Vector2Int tilePosition)

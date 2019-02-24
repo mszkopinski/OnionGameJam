@@ -8,6 +8,12 @@ public class Wolf : Entity
     {
         base.OnMoveStarted(onMoveEnded);
         if (IsMoving == false) return;
+        var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
+        if (currentTile == null)
+        {
+	        return;
+        }        
+        
         //CurrentTarget = CurrentPosition + new Vector2Int(0, 1);
         if (CheckIfPlacerIsClose() != new Vector2Int(0, 0)) {
         	Debug.Log("0");

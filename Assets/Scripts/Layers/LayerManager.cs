@@ -1,3 +1,4 @@
+using System.Collections;
 using Utils;
 using System.Collections.Generic;
 using System.Linq;
@@ -78,14 +79,12 @@ namespace Layers
                 newPosition,
                 () =>
                 {
-                    if (cachedTile != null)
-                    {
-                        cachedPlayer.transform.SetParent(null);
-                    }
+                    cachedPlayer.transform.SetParent(null);
+
                     PreviousLayer?.OnLayerPopped(() =>
                     {
                         cachedPlayer.RevokeEvents();
-                        cachedPlayer.transform.SetParent(((Layer) CurrentLayer).transform);
+                        cachedPlayer.transform.SetParent(((Layer) poppedLayer).transform);
                         
                         if (cachedTile != null)
                         {

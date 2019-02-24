@@ -1,7 +1,9 @@
 using System;
+using System.Diagnostics;
 using DG.Tweening;
 using Layers;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public abstract class Entity : MonoBehaviour
 {
@@ -29,7 +31,7 @@ public abstract class Entity : MonoBehaviour
 
     protected void Update()
     {
-        if (CurrentTarget == null) return;
+        if (CurrentTarget == null) return;   
         
         var targetPos = transform.localPosition;
         targetPos.x = CurrentTarget.Value.x;
@@ -40,9 +42,9 @@ public abstract class Entity : MonoBehaviour
             OnTargetReached();
             var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
             var entityNextToThis = LayerManager.Instance.CurrentLayer?.GetEntityAtPosition(CurrentPosition);
-            if (currentTile == null)
+            if (currentTile == null && LayerManager.Instance.CurrentLayer != null && transform.parent.Equals(((Layer)LayerManager.Instance.CurrentLayer).transform))
             {
-                OnEmptyPlaceReached();
+                OnEmptyPlaceReached(); 
             }
 
             if (entityNextToThis != null && !ReferenceEquals(entityNextToThis, this))
@@ -88,10 +90,10 @@ public abstract class Entity : MonoBehaviour
     {
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
+        
         IsMoving = true;
         
         LayerManager.Instance.CurrentLayer?.RefreshPlayerPossibleMoves();
-        Debug.Log("STARTED MOVING " + gameObject.name);
         moveEndedCallback = onMoveEnded;
 		
 		if (anim != null) {
@@ -116,8 +118,6 @@ public abstract class Entity : MonoBehaviour
     {
         IsMoving = false;
         
-        Debug.Log("ENDED MOVING " + gameObject.name);
-		
 		if (anim != null) {
 			anim.SetBool("walk", false);
 			anim.SetBool("attack", false);
