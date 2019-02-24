@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 60363542a78dd9f43b665e491570dcf3
+=======
+guid: eb5d8b8e5ccd7314bb1325343a83e23a
+>>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -42,14 +46,23 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< Updated upstream
     globalScale: 0.03125
+=======
+    globalScale: 1
+>>>>>>> Stashed changes
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
+<<<<<<< Updated upstream
     importCameras: 0
     importLights: 0
+=======
+    importCameras: 1
+    importLights: 1
+>>>>>>> Stashed changes
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
