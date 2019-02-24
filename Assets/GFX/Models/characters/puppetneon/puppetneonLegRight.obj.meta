@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 guid: 0cfbd6a50cbc5924bacf8e2547d67625
+=======
+guid: 0bbc5dfe7c8184e408372772607d7510
+>>>>>>> Stashed changes
 =======
 guid: 0bbc5dfe7c8184e408372772607d7510
 >>>>>>> Stashed changes
@@ -47,7 +51,11 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     globalScale: 0.03125
+=======
+    globalScale: 1
+>>>>>>> Stashed changes
 =======
     globalScale: 1
 >>>>>>> Stashed changes
@@ -57,8 +65,13 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     importCameras: 0
     importLights: 0
+=======
+    importCameras: 1
+    importLights: 1
+>>>>>>> Stashed changes
 =======
     importCameras: 1
     importLights: 1

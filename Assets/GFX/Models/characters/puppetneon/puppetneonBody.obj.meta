@@ -1,34 +1,16 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-guid: 8d3a4b790f598ac49bda8dcc8bd15662
-=======
-guid: 97d27b6356d8b1248b9a76c31afee009
->>>>>>> Stashed changes
-=======
-guid: 97d27b6356d8b1248b9a76c31afee009
->>>>>>> Stashed changes
+guid: ebffe67b44d17f94399d3fc179beb7be
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Body
-    100002: Head
-    100004: HipLeft
-    100006: HipRight
-    100008: LegLeft
-    100010: LegRight
-    100012: Neck
-    100014: //RootNode
-    400000: Body
-    400002: Head
-    400004: HipLeft
-    400006: HipRight
-    400008: LegLeft
-    400010: LegRight
-    400012: Neck
-    400014: //RootNode
-    7400000: Armature|ArmatureAction
-    9500000: //RootNode
+    100000: puppetneonBody
+    100002: //RootNode
+    400000: puppetneonBody
+    400002: //RootNode
+    2100000: palette
+    2300000: puppetneonBody
+    3300000: puppetneonBody
+    4300000: puppetneonBody
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -81,8 +63,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -109,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
