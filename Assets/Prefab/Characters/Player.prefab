@@ -985,7 +985,7 @@ MonoBehaviour:
   moveSpeed: 2
   rotationSpeed: 10
   anim: {fileID: 0}
-  walkClip: {fileID: 0}
+  walkClip: {fileID: 8300000, guid: 9b3700d56e035a34db9929d19994e5ce, type: 3}
 --- !u!82 &5559837992512249497
 AudioSource:
   m_ObjectHideFlags: 0
@@ -996,7 +996,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9b3700d56e035a34db9929d19994e5ce, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

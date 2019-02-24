@@ -25,6 +25,8 @@ public abstract class Entity : MonoBehaviour
     Quaternion lookRotation;
     bool initialPositionFetched;
 
+    bool isWalkSoundPlayed = false;
+
     protected void Update()
     {
         if (CurrentTarget == null) return;
@@ -55,10 +57,11 @@ public abstract class Entity : MonoBehaviour
         {
             var step =  moveSpeed * Time.deltaTime;
             transform.localPosition = Vector3.MoveTowards(transform.localPosition, targetPos, step);
-        
             lookDirection = (targetPos- transform.localPosition).normalized;
             lookRotation = Quaternion.LookRotation(lookDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+
+            PlayWalkSound();
         }
     }
     
@@ -66,6 +69,7 @@ public abstract class Entity : MonoBehaviour
     {
         TargetReached?.Invoke();
         OnMoveEnded();
+        isWalkSoundPlayed = false;
     }
 
     protected virtual void OnPushed()
@@ -85,7 +89,7 @@ public abstract class Entity : MonoBehaviour
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
         IsMoving = true;
-        PlayWalkSound();
+        
         LayerManager.Instance.CurrentLayer?.RefreshPlayerPossibleMoves();
         Debug.Log("STARTED MOVING " + gameObject.name);
         moveEndedCallback = onMoveEnded;
@@ -100,9 +104,11 @@ public abstract class Entity : MonoBehaviour
     {
         var audioSource = GetComponent<AudioSource>();
 
-        if (audioSource != null)
+        if (audioSource != null && !isWalkSoundPlayed)
         {
             audioSource.PlayOneShot(walkClip);
+            isWalkSoundPlayed = true;
+
         }
     }
     
