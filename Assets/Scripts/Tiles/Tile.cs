@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Layers;
 using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
@@ -16,6 +18,12 @@ public class Tile : MonoBehaviour
     Action<Vector2Int> tilePressedCallback;
     Color defaultMatColor;
     Renderer tileRenderer;
+    Collider collider;
+
+    void Awake()
+    {
+        collider = GetComponent(typeof(Collider)) as Collider;
+    }
     
     public void Initialize(Action<Vector2Int> tilePressed, TileType tileType)
     {
@@ -27,6 +35,20 @@ public class Tile : MonoBehaviour
         {
             tileRenderer.material.color = Color.yellow;
         }
+
+        StartCoroutine(WaitFrameAndFuckOff());
+    }
+    
+    IEnumerator WaitFrameAndFuckOff()
+    {
+        collider.enabled = false;
+        yield return null;
+        yield return null;
+        yield return null;
+        yield return null;
+        yield return null;
+        yield return null;
+        collider.enabled = true;
     }
     
     void OnMouseDown()

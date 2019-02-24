@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
@@ -120,7 +121,6 @@ namespace Layers
                         var tileComponent = temp.AddComponent<Tile>();
                         tileComponent.Initialize(OnTilePressed, tiles[x, y]);
                         cachedTiles.Add(tileComponent);
-                        
                     }
                     if (entityTile != null)
                     {
