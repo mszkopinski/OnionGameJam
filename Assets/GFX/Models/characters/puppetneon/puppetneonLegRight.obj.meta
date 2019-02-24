@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 16dcee538e8263140ab9069454eca6ee
+guid: 0cfbd6a50cbc5924bacf8e2547d67625
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: johnnyguns
+    100000: puppetneonLegRight
     100002: //RootNode
-    400000: johnnyguns
+    400000: puppetneonLegRight
     400002: //RootNode
     2100000: palette
-    2300000: johnnyguns
-    3300000: johnnyguns
-    4300000: johnnyguns
+    2300000: puppetneonLegRight
+    3300000: puppetneonLegRight
+    4300000: puppetneonLegRight
   externalObjects: {}
   materials:
     importMaterials: 1
