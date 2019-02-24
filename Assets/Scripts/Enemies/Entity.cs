@@ -20,7 +20,8 @@ public abstract class Entity : MonoBehaviour
 
     public Vector2Int CurrentPosition => new Vector2Int(Mathf.RoundToInt(transform.localPosition.x), Mathf.RoundToInt(transform.localPosition.z));
     public Vector2Int PreviousPosition { get; protected set; }
-    
+    public AudioClip walkClip;
+
     Vector3 lookDirection;
     Quaternion lookRotation;
     bool initialPositionFetched;
@@ -78,6 +79,16 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
+    void PlayWalkSound()
+    {
+        var audioSource = GetComponent<AudioSource>();
+
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(walkClip);
+        }
+    }
+
     public virtual void OnMoveStarted()
     {
         MoveStarted?.Invoke();
@@ -98,7 +109,9 @@ public abstract class Entity : MonoBehaviour
         IsMoving = false;
         
         Debug.Log("ENDED MOVING " + gameObject.name);
-		
+
+        PlayWalkSound();
+
 		if (anim != null) {
 			anim.SetBool("walk", false);
 			anim.SetBool("attack", false);
