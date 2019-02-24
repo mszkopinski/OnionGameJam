@@ -12,6 +12,7 @@ namespace Layers
     public class Layer : SerializedMonoBehaviour, ILayer
     {
         public event Action<Vector2Int> TilePressed;
+
         public Vector2Int? PlayerPosition => cachedPlayer?.CurrentPosition;
 
         [TableMatrix, SerializeField] TileType[,] tiles;
@@ -194,7 +195,7 @@ namespace Layers
                 case TileType.SolidTile:
                     return new Tuple<GameObject, GameObject>(tilePrefab, null);
                 case TileType.EndPoint:
-                    return new Tuple<GameObject, GameObject>(null, null);
+                    return new Tuple<GameObject, GameObject>(tilePrefab, null);
                 case TileType.Player:
                     return new Tuple<GameObject, 
                         GameObject>(LayerManager.Instance.PreviousLayer == null ? tilePrefab : null, 
@@ -202,6 +203,11 @@ namespace Layers
             }
 
             return null;
+        }
+        
+        public void ClearEntities()
+        {
+            cachedEntities.ForEach(e => { e.transform.DOScale(0f, .3f).OnComplete(() => { Destroy(e.gameObject); }); });
         }
 
         public void DeselectAllTiles()
@@ -273,6 +279,7 @@ namespace Layers
         void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController, bool instant = false);
         void DeselectAllTiles();
         void SetTile(Vector2Int position, Tile tile);
+        void ClearEntities();
         Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
         Tile GetTileAtPosition(Vector2Int position);

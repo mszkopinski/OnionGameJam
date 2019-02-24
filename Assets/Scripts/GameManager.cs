@@ -16,6 +16,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     bool gameHasEnded = false;
 
+
     public void Start()
     {
         if(RoundsLabel)
@@ -28,11 +29,13 @@ public class GameManager : MonoSingleton<GameManager>
         }
     }
 
+    //This Method display win screen
     public void WinLevel ()
     {
         completeLevelUI.SetActive(true);
     }
 
+    //This Method cause lose and restart level
     public void LoseLevel()
     {
         if (!gameHasEnded)
@@ -79,6 +82,7 @@ public class GameManager : MonoSingleton<GameManager>
             var moveQueue = currentLayer.EnemiesMoveQueue;
             if (moveQueue.Count <= 1)
             {
+                lastMoveIndex = 0;
                 LayerManager.Instance.PopLayer();
                 return true;
             }

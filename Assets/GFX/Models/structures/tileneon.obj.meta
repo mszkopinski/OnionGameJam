@@ -8,6 +8,7 @@ ModelImporter:
     400000: tileneon
     400002: //RootNode
     2100000: palette
+    2100002: tileneonMat
     2300000: tileneon
     3300000: tileneon
     4300000: tileneon

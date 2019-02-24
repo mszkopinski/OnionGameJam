@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: f7004d677f5bdf34fb815f8a0f77e924
+guid: bcb20c098cc0c724b84d811e54555150
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: tilestart
+    100000: johnnyguys
     100002: //RootNode
-    400000: tilestart
+    400000: johnnyguys
     400002: //RootNode
     2100000: palette
-    2100002: tilestartMat
-    2300000: tilestart
-    3300000: tilestart
-    4300000: tilestart
+    2300000: johnnyguys
+    3300000: johnnyguys
+    4300000: johnnyguys
   externalObjects: {}
   materials:
     importMaterials: 1

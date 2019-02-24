@@ -8,6 +8,7 @@ ModelImporter:
     400000: tilefinish
     400002: //RootNode
     2100000: palette
+    2100002: tilefinishMat
     2300000: tilefinish
     3300000: tilefinish
     4300000: tilefinish
