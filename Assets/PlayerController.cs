@@ -13,7 +13,7 @@ public class PlayerController : Entity
     
     void OnDestroy()
     {
-        if (LayerManager.Instance.CurrentLayer != null)
+        if (LayerManager.Instance != null && LayerManager.Instance.CurrentLayer != null)
         {
             LayerManager.Instance.CurrentLayer.TilePressed -= OnTilePressed;
         }

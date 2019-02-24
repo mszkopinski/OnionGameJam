@@ -76,13 +76,14 @@ public class GameManager : MonoSingleton<GameManager>
         var nextEntity = moveQueue.ElementAtOrDefault(lastMoveIndex);
         if (nextEntity == null) return;
         Debug.Log(currentLayer + " enemies queue count: " + moveQueue.Count + ". Current move " + nextEntity);
-        if (CurrentMove != null)
+        if (currentMove != null)
         {
-            CurrentMove.MoveEnded -= OnCurrentMoveEnded;
+            currentMove.MoveEnded -= OnCurrentMoveEnded;
         }
-        CurrentMove = nextEntity;
-        CurrentMove.MoveEnded += OnCurrentMoveEnded;
-        CurrentMove.OnMoveStarted();
+
+        currentMove = nextEntity;
+        currentMove.MoveEnded += OnCurrentMoveEnded;
+        currentMove.OnMoveStarted();
     }
 
     void OnCurrentMoveEnded()
@@ -97,17 +98,6 @@ public class GameManager : MonoSingleton<GameManager>
     public bool CheckEndConditions()
     {
         return currentLayer != null && currentLayer.CheckEndConditions();
-    }
-    
-    public Entity CurrentMove
-    {
-        get => currentMove;
-        set
-        {
-            if (ReferenceEquals(value, currentMove)) return;
-            currentMove = value;
-            currentMove.OnMoveStarted();
-        }
     }
 
     Entity currentMove;
