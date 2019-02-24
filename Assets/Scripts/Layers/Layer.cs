@@ -20,6 +20,8 @@ namespace Layers
         [SerializeField] List<TileWithPosition> moveQueue = new List<TileWithPosition>();
 
         [SerializeField] GameObject tilePrefab;
+        [SerializeField] GameObject startTilePrefab;
+        [SerializeField] GameObject endTilePrefab;
         [SerializeField] int layerWidth;
         [SerializeField] int layerHeight;
         [SerializeField] int turnsPerLayer;
@@ -204,10 +206,10 @@ namespace Layers
                 case TileType.SolidTile:
                     return new Tuple<GameObject, GameObject>(tilePrefab, null);
                 case TileType.EndPoint:
-                    return new Tuple<GameObject, GameObject>(tilePrefab, null);
+                    return new Tuple<GameObject, GameObject>(endTilePrefab, null);
                 case TileType.Player:
                     return new Tuple<GameObject, 
-                        GameObject>(LayerManager.Instance.PreviousLayer == null ? tilePrefab : null, 
+                        GameObject>(LayerManager.Instance.PreviousLayer == null ? startTilePrefab : null, 
                         LayerManager.Instance.PreviousLayer == null ? GameManager.Instance.PlayerPrefab : null);
             }
 
