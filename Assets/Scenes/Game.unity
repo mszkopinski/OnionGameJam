@@ -173,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -314,6 +314,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",0,4,1,1,0,1,3,0,1,1,6,2]}'
       objectReference: {fileID: 0}
@@ -390,7 +396,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -523,6 +529,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -742,6 +754,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
@@ -824,7 +842,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -957,6 +975,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1041,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1174,6 +1198,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1258,7 +1288,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1399,6 +1429,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":4,"$rcontent":["ranks":"4|1",2,3,0,5]}'
       objectReference: {fileID: 0}
@@ -1475,7 +1511,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1608,6 +1644,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -1761,7 +1803,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1894,6 +1936,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2119,6 +2167,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"4|5",4,3,0,6,2,0,0,5,0,0,0,6,6,1,1,0,0,0,1,1]}'
       objectReference: {fileID: 0}
@@ -2195,7 +2249,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2328,6 +2382,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2412,7 +2472,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2553,6 +2613,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"4|5",1,1,5,2,1,4,0,0,6,0,3,0,0,0,0,0,0,0,0,0]}'
       objectReference: {fileID: 0}
@@ -2629,7 +2695,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2762,6 +2828,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2979,6 +3051,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3238,7 +3316,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3371,6 +3449,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3455,7 +3539,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3596,6 +3680,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":3,"$rcontent":["ranks":"3|1",3,6,2]}'
       objectReference: {fileID: 0}
@@ -3672,7 +3762,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3805,6 +3895,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -4030,6 +4126,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":30,"$rcontent":["ranks":"5|6",1,0,5,1,1,1,1,0,1,1,0,0,1,0,0,0,2,6,1,3,1,1,1,1,4,0,1,1,1,1]}'
       objectReference: {fileID: 0}
@@ -4106,7 +4208,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4239,6 +4341,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -4464,6 +4572,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":28,"$rcontent":["ranks":"4|7",0,3,0,0,0,6,2,6,6,0,0,0,0,1,0,0,1,1,0,0,1,1,1,1,1,0,4,1]}'
       objectReference: {fileID: 0}
@@ -4540,7 +4654,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4673,6 +4787,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -4851,7 +4971,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4984,6 +5104,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -5068,7 +5194,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5201,6 +5327,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -5285,7 +5417,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5418,6 +5550,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -5502,7 +5640,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5643,6 +5781,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,0,1,1,0,3,1,1,0,0,0,4,1,1,2,1]}'
       objectReference: {fileID: 0}
@@ -5719,7 +5863,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5852,6 +5996,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -6077,6 +6227,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,4,1,1,3,0,0,6,1,0,6,2,1,4,1,1]}'
       objectReference: {fileID: 0}
@@ -6153,7 +6309,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6299,6 +6455,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":32,"$rcontent":["ranks":"8|4",5,0,0,0,1,4,6,3,1,0,6,1,1,0,1,1,0,2,1,1,0,1,1,1,4,1,1,1,0,1,1,1]}'
       objectReference: {fileID: 0}
@@ -6370,7 +6532,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6503,6 +6665,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -6776,6 +6944,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":18,"$rcontent":["ranks":"3|6",1,0,4,1,3,0,1,1,0,1,0,1,0,2,0,0,0,4]}'
       objectReference: {fileID: 0}
@@ -6852,7 +7026,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7069,7 +7243,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7202,6 +7376,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -7427,6 +7607,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":35,"$rcontent":["ranks":"5|7",1,1,1,1,1,3,0,1,1,1,1,1,0,1,1,1,0,6,0,0,4,2,0,0,1,1,1,1,1,1,0,0,4,1,1]}'
       objectReference: {fileID: 0}
@@ -7503,7 +7689,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7644,6 +7830,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,4,1,3,0,2,0,4,0]}'
       objectReference: {fileID: 0}
@@ -7720,7 +7912,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7861,6 +8053,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":21,"$rcontent":["ranks":"3|7",0,0,0,0,0,0,0,0,4,4,2,1,3,0,0,0,0,0,0,0,0]}'
       objectReference: {fileID: 0}
@@ -7937,7 +8135,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8078,6 +8276,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,0,1,3,4,2,0,0,0]}'
       objectReference: {fileID: 0}
@@ -8185,7 +8389,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8318,6 +8522,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8543,6 +8753,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,0,0,3,1,2,0,0,0]}'
       objectReference: {fileID: 0}
@@ -8619,7 +8835,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8752,6 +8968,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8915,7 +9137,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9056,6 +9278,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",1,1,2,4,0,0,3,0,5,1,4,1]}'
       objectReference: {fileID: 0}
@@ -9132,7 +9360,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9265,6 +9493,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -9490,6 +9724,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":35,"$rcontent":["ranks":"5|7",1,1,0,1,1,3,0,1,1,4,1,1,0,1,1,1,0,6,0,0,4,2,0,0,1,1,1,1,1,1,0,0,4,1,0]}'
       objectReference: {fileID: 0}
@@ -9566,7 +9806,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9707,6 +9947,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":25,"$rcontent":["ranks":"5|5",0,1,0,1,1,0,3,0,2,4,4,1,1,1,0,1,1,0,1,1,1,0,0,0,1]}'
       objectReference: {fileID: 0}
@@ -9783,7 +10029,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9916,6 +10162,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -10141,6 +10393,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,1,2,2,4,0,6,2,1,0,3,4,1,4,0,0]}'
       objectReference: {fileID: 0}
@@ -10217,7 +10475,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -10350,6 +10608,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -10575,6 +10839,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"5|4",2,4,0,0,1,1,0,0,1,3,0,0,1,1,6,0,0,5,0,0]}'
       objectReference: {fileID: 0}
@@ -10651,7 +10921,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -10784,6 +11054,12 @@ PrefabInstance:
       propertyPath: enemiesTiles.Array.data[2].Position.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.Prefab
