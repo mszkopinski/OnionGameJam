@@ -7,6 +7,7 @@ public abstract class Entity : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 2f;
     [SerializeField] float rotationSpeed = 10f;
+	[SerializeField] Animator anim = null;
         
     public Vector2Int? CurrentTarget { get; set; }
     public bool IsMoving { get; protected set; }
@@ -82,12 +83,22 @@ public abstract class Entity : MonoBehaviour
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
         IsMoving = true;
+		
+		if (anim != null) {
+			anim.SetBool("walk", true);
+			anim.SetBool("attack", false);
+		}
     }
     
     protected virtual void OnMoveEnded()
     {
         MoveEnded?.Invoke();
         IsMoving = false;
+		
+		if (anim != null) {
+			anim.SetBool("walk", false);
+			anim.SetBool("attack", false);
+		}
     }
 
     protected virtual void OnEntityDied()
@@ -128,6 +139,11 @@ public abstract class Entity : MonoBehaviour
                 OnEmptyPlaceReached();
             }
         });
+		
+		if (anim != null) {
+			anim.SetBool("walk", false);
+			anim.SetBool("attack", true);
+		}
     }
 
     void OnEmptyPlaceReached()
