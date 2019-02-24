@@ -23,6 +23,10 @@ public class Tile : MonoBehaviour
         tileRenderer = GetComponentInChildren<Renderer>();
         defaultMatColor = tileRenderer.material.color;
         Type = tileType;
+        if (Type == TileType.EndPoint)
+        {
+            tileRenderer.material.color = Color.yellow;
+        }
     }
     
     void OnMouseDown()
