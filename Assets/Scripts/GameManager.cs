@@ -72,6 +72,7 @@ public class GameManager : MonoSingleton<GameManager>
         
         var moveQueue = currentLayer.EnemiesMoveQueue;
         lastMoveIndex = lastMoveIndex >= moveQueue.Count - 1 ? 0 : lastMoveIndex + 1;
+        
         var nextEntity = moveQueue.ElementAtOrDefault(lastMoveIndex);
         if (nextEntity == null) return;
         Debug.Log(currentLayer + " enemies queue count: " + moveQueue.Count + ". Current move " + nextEntity);
@@ -88,25 +89,14 @@ public class GameManager : MonoSingleton<GameManager>
     {
         if (currentLayer != null)
         {
+            currentLayer.OnTurnEnded();
             StartNextMove(currentLayer);
         }
     }
 
     public bool CheckEndConditions()
     {
-        var currentLayer = LayerManager.Instance.CurrentLayer;
-        if (currentLayer != null)
-        {
-            var moveQueue = currentLayer.EnemiesMoveQueue;
-            if (moveQueue.Count <= 1)
-            {
-                lastMoveIndex = 0;
-                LayerManager.Instance.PopLayer();
-                return true;
-            }
-        }
-
-        return false;
+        return currentLayer != null && currentLayer.CheckEndConditions();
     }
     
     public Entity CurrentMove

@@ -22,16 +22,24 @@ namespace Layers
         [SerializeField] GameObject tilePrefab;
         [SerializeField] int layerWidth;
         [SerializeField] int layerHeight;
+        [SerializeField] int turnsPerLayer;
         
         public bool IsSpawned { get; private set; }
         public List<Entity> EnemiesMoveQueue { get; } = new List<Entity>();
 
         public float Height { get; private set; }
+        public int Turns => turnsPerLayer;
 
+        int elapsedTurns;
         int previousGolemsNumber, previousWolfsNumber;
         readonly List<Tile> cachedTiles = new List<Tile>();
         readonly List<Entity> cachedEntities = new List<Entity>();
         PlayerController cachedPlayer;
+
+        void Awake()
+        {
+            elapsedTurns = 0;
+        }
         
         void OnValidate()
         {
@@ -249,6 +257,16 @@ namespace Layers
             });
             return pos;
         }
+        
+        public void OnTurnEnded()
+        {
+            ++elapsedTurns;
+        }
+
+        public bool CheckEndConditions()
+        {
+            return elapsedTurns >= Turns;
+        }
 
         protected virtual void OnTilePressed(Vector2Int tilePosition)
         {
@@ -276,12 +294,15 @@ namespace Layers
         event Action<Vector2Int> TilePressed;
         List<Entity> EnemiesMoveQueue { get; }
         float Height { get; }
+        int Turns { get; }
         void OnLayerPopped(Action callback, Vector2Int layerOffset);
         void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController, bool instant = false);
         void DeselectAllTiles();
         void SetTile(Vector2Int position, Tile tile);
         void ClearEntities();
-        void RefreshPlayerPossibleMoves();  
+        void RefreshPlayerPossibleMoves();
+        void OnTurnEnded();
+        bool CheckEndConditions();
         Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
         Tile GetTileAtPosition(Vector2Int position);
