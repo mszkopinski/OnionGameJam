@@ -50,10 +50,4 @@ public class PlayerController : Entity
             }
         }
     }
-
-    protected override void OnMoveEnded()
-    {
-        base.OnMoveEnded();
-        LayerManager.Instance.CurrentLayer?.DeselectAllTiles();
-    }
 }

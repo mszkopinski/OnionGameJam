@@ -13,7 +13,6 @@ public abstract class Entity : MonoBehaviour
     public bool IsMoving { get; protected set; }
     
     public event Action TargetReached;
-    public event Action MoveEnded;
     public event Action MoveStarted;
     public event Action Pushed;
     public event Action Died;
@@ -78,13 +77,16 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
-    public virtual void OnMoveStarted()
+    Action moveEndedCallback;
+    
+    public virtual void OnMoveStarted(Action onMoveEnded)
     {
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
         IsMoving = true;
         LayerManager.Instance.CurrentLayer?.RefreshPlayerPossibleMoves();
         Debug.Log("STARTED MOVING " + gameObject.name);
+        moveEndedCallback = onMoveEnded;
 		
 		if (anim != null) {
 			anim.SetBool("walk", true);
@@ -94,7 +96,6 @@ public abstract class Entity : MonoBehaviour
     
     protected virtual void OnMoveEnded()
     {
-        MoveEnded?.Invoke();
         IsMoving = false;
         
         Debug.Log("ENDED MOVING " + gameObject.name);
@@ -103,6 +104,8 @@ public abstract class Entity : MonoBehaviour
 			anim.SetBool("walk", false);
 			anim.SetBool("attack", false);
 		}
+		
+        moveEndedCallback?.Invoke();
     }
 
     protected virtual void OnEntityDied()
