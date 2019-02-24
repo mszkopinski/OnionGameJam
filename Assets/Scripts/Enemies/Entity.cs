@@ -33,11 +33,11 @@ public abstract class Entity : MonoBehaviour
         targetPos.x = CurrentTarget.Value.x;
         targetPos.z = CurrentTarget.Value.y;
 
-        if (Vector3.Distance(transform.localPosition, targetPos) <= .1f)
+        if (Vector3.Distance(transform.localPosition, targetPos) <= .001f)
         {
             OnTargetReached();
             var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
-            var entityNextToThis = LayerManager.Instance.CurrentLayer?.GetEntityAtPosition(CurrentPosition);            
+            var entityNextToThis = LayerManager.Instance.CurrentLayer?.GetEntityAtPosition(CurrentPosition);
             if (currentTile == null)
             {
                 OnEmptyPlaceReached();

@@ -4,6 +4,7 @@ using System.Linq;
 using DG.Tweening;
 using Enemies;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using UnityEngine;
 using Utils;
 
@@ -75,7 +76,7 @@ namespace Layers
         {
             gameObject.SetActive(true);
             cachedPlayer = playerController;
-            
+
             SpawnTiles();
             transform.DOLocalMove(spawnPoint, 0f)
                 .OnComplete(() =>
@@ -86,6 +87,7 @@ namespace Layers
                         {
                             IsSpawned = true;
                             layerPopped?.Invoke();
+                            GameManager.Instance.StartNextMove(this);
                         });
                 });
         }
@@ -149,13 +151,12 @@ namespace Layers
             
             cachedPlayer.MoveStarted += RefreshPlayerPossibleMoves;
             cachedPlayer.Pushed += RefreshPlayerPossibleMoves;
-            GameManager.Instance.StartNextMove();
         }
 
-        void RefreshPlayerPossibleMoves()
+        public void RefreshPlayerPossibleMoves()
         {
-            var playerPos = cachedPlayer.CurrentPosition;
             DeselectAllTiles();
+            var playerPos = cachedPlayer.CurrentPosition;
 
             var leftTile = cachedTiles.FirstOrDefault(t =>
                 t.CurrentPosition.x == playerPos.x - 1 && t.CurrentPosition.y == playerPos.y);
@@ -207,7 +208,7 @@ namespace Layers
         
         public void ClearEntities()
         {
-            cachedEntities.ForEach(e => { e.transform.DOScale(0f, .3f).OnComplete(() => { Destroy(e.gameObject); }); });
+            cachedEntities.Where(e => !(e is PlayerController)).ForEach(e => Destroy(e.gameObject));
         }
 
         public void DeselectAllTiles()
@@ -280,6 +281,7 @@ namespace Layers
         void DeselectAllTiles();
         void SetTile(Vector2Int position, Tile tile);
         void ClearEntities();
+        void RefreshPlayerPossibleMoves();  
         Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
         Tile GetTileAtPosition(Vector2Int position);

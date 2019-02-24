@@ -39,6 +39,7 @@ namespace Layers
             if (CurrentLayer != null)
             {
                 PreviousLayer = CurrentLayer;
+                PreviousLayer.ClearEntities();
             }
 
             var poppedLayer = savedLayers.Dequeue();
@@ -90,6 +91,7 @@ namespace Layers
                         {
                             cachedTile.transform.SetParent(((MonoBehaviour) CurrentLayer).transform);
                             CurrentLayer.SetTile(cachedTile.CurrentPosition, cachedTile);
+                            CurrentLayer.RefreshPlayerPossibleMoves();
                         }
                     }, layerOffset);
                     

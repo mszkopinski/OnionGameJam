@@ -52,25 +52,43 @@ public class GameManager : MonoSingleton<GameManager>
     }
 
     int lastMoveIndex = -1;
+    Layer currentLayer;
 
-    public void StartNextMove()
+    public void StartNextMove(Layer layer)
     {
         if (CheckEndConditions())
+        {
+            currentLayer = null;
             return;
-        var currentLayer = LayerManager.Instance.CurrentLayer;
+        }
+
+        if (currentLayer == null || layer != currentLayer)
+        {
+            currentLayer = layer;
+            lastMoveIndex = -1;
+        }
+        
+        if (currentLayer == null) return;
+        
+        var moveQueue = currentLayer.EnemiesMoveQueue;
+        lastMoveIndex = lastMoveIndex >= moveQueue.Count - 1 ? 0 : lastMoveIndex + 1;
+        var nextEntity = moveQueue.ElementAtOrDefault(lastMoveIndex);
+        if (nextEntity == null) return;
+        Debug.Log(currentLayer + " enemies queue count: " + moveQueue.Count + ". Current move " + nextEntity);
+        if (CurrentMove != null)
+        {
+            CurrentMove.MoveEnded -= OnCurrentMoveEnded;
+        }
+        CurrentMove = nextEntity;
+        CurrentMove.MoveEnded += OnCurrentMoveEnded;
+        CurrentMove.OnMoveStarted();
+    }
+
+    void OnCurrentMoveEnded()
+    {
         if (currentLayer != null)
         {
-            var moveQueue = currentLayer.EnemiesMoveQueue;
-            lastMoveIndex = lastMoveIndex >= moveQueue.Count - 1 ? 0 : lastMoveIndex + 1;
-            var nextEntity = moveQueue.ElementAtOrDefault(lastMoveIndex);
-            if (nextEntity == null) return;
-            if (CurrentMove != null)
-            {
-                CurrentMove.MoveEnded -= StartNextMove;
-            }
-            CurrentMove = nextEntity;
-            CurrentMove.MoveEnded += StartNextMove;
-            CurrentMove.OnMoveStarted();
+            StartNextMove(currentLayer);
         }
     }
 
