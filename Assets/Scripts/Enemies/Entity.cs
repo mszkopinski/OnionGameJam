@@ -33,7 +33,7 @@ public abstract class Entity : MonoBehaviour
         targetPos.x = CurrentTarget.Value.x;
         targetPos.z = CurrentTarget.Value.y;
 
-        if (Vector3.Distance(transform.localPosition, targetPos) <= .001f)
+        if (Vector3.Distance(transform.localPosition, targetPos) <= .0001f)
         {
             OnTargetReached();
             var currentTile = LayerManager.Instance.CurrentLayer?.GetTileAtPosition(CurrentPosition);
@@ -83,6 +83,8 @@ public abstract class Entity : MonoBehaviour
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
         IsMoving = true;
+        LayerManager.Instance.CurrentLayer?.RefreshPlayerPossibleMoves();
+        Debug.Log("STARTED MOVING " + gameObject.name);
 		
 		if (anim != null) {
 			anim.SetBool("walk", true);
@@ -94,6 +96,8 @@ public abstract class Entity : MonoBehaviour
     {
         MoveEnded?.Invoke();
         IsMoving = false;
+        
+        Debug.Log("ENDED MOVING " + gameObject.name);
 		
 		if (anim != null) {
 			anim.SetBool("walk", false);
