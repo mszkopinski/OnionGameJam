@@ -17,7 +17,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: tilefinishMat
-    second: {fileID: 2100000, guid: f0a8e0c46cbafea41949c50e433d8d08, type: 2}
+    second: {fileID: 2100000, guid: 2b35bd65ec93786439363b9c49947bef, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3670548669046538122
+--- !u!1 &4289903662647291557
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6340457712916036036}
-  - component: {fileID: 5989397527623615842}
-  - component: {fileID: 8385681152592304055}
-  - component: {fileID: 6128085012356581721}
+  - component: {fileID: 1761406871167044553}
+  - component: {fileID: 8162786457431694210}
+  - component: {fileID: 8233698705459983003}
+  - component: {fileID: 1092243897879100837}
   m_Layer: 0
-  m_Name: Layer_Mesh
+  m_Name: TileNeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6340457712916036036
+--- !u!4 &1761406871167044553
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670548669046538122}
+  m_GameObject: {fileID: 4289903662647291557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5989397527623615842
+--- !u!33 &8162786457431694210
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670548669046538122}
-  m_Mesh: {fileID: 4300000, guid: fec3d69a06106104d8b3c435380341bf, type: 3}
---- !u!23 &8385681152592304055
+  m_GameObject: {fileID: 4289903662647291557}
+  m_Mesh: {fileID: 4300000, guid: 78d572626cb06eb4daafb13bdc87ca21, type: 3}
+--- !u!23 &8233698705459983003
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670548669046538122}
+  m_GameObject: {fileID: 4289903662647291557}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,15 +78,15 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6128085012356581721
+--- !u!65 &1092243897879100837
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670548669046538122}
+  m_GameObject: {fileID: 4289903662647291557}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.0625, z: 1}

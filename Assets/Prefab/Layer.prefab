@@ -68,9 +68,12 @@ MonoBehaviour:
       Entry: 8
       Data: 
   moveQueue: []
-  tilePrefab: {fileID: 100002, guid: 78d572626cb06eb4daafb13bdc87ca21, type: 3}
-  startTilePrefab: {fileID: 100002, guid: f7004d677f5bdf34fb815f8a0f77e924, type: 3}
-  endTilePrefab: {fileID: 100002, guid: af94c772ed116344ab4c4042647b888e, type: 3}
+  tilePrefab: {fileID: 4289903662647291557, guid: 9656df78cef28d24f8bdea0e44f92daa,
+    type: 3}
+  endTilePrefab: {fileID: 7100493798733950218, guid: 8b52f993eb8d19848accde0e6ea88dba,
+    type: 3}
+  startTilePrefab: {fileID: 1795752743657665268, guid: 85e82ba3d99817f4aa5faa226dffdad6,
+    type: 3}
   layerWidth: 0
   layerHeight: 0
   turnsPerLayer: 0

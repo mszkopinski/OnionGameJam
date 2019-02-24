@@ -12,7 +12,6 @@ ModelImporter:
     2300000: tilestart
     3300000: tilestart
     4300000: tilestart
-    6400000: tilestart
   externalObjects:
   - first:
       type: UnityEngine:Material
