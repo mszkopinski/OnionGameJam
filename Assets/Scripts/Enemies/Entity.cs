@@ -75,6 +75,8 @@ public abstract class Entity : MonoBehaviour
         if (currentTile == null)
         {
             OnEmptyPlaceReached();
+        }
+    }
 
     Action moveEndedCallback;
     
