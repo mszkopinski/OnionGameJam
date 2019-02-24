@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
@@ -20,6 +21,8 @@ namespace Layers
         [SerializeField] List<TileWithPosition> moveQueue = new List<TileWithPosition>();
 
         [SerializeField] GameObject tilePrefab;
+        [SerializeField] GameObject endTilePrefab;
+        [SerializeField] GameObject startTilePrefab;
         [SerializeField] int layerWidth;
         [SerializeField] int layerHeight;
         [SerializeField] int turnsPerLayer;
@@ -118,7 +121,6 @@ namespace Layers
                         var tileComponent = temp.AddComponent<Tile>();
                         tileComponent.Initialize(OnTilePressed, tiles[x, y]);
                         cachedTiles.Add(tileComponent);
-                        
                     }
                     if (entityTile != null)
                     {
