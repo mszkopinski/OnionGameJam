@@ -21,6 +21,8 @@ namespace Layers
         [SerializeField] List<TileWithPosition> moveQueue = new List<TileWithPosition>();
 
         [SerializeField] GameObject tilePrefab;
+        [SerializeField] GameObject endTilePrefab;
+        [SerializeField] GameObject startTilePrefab;
         [SerializeField] int layerWidth;
         [SerializeField] int layerHeight;
         [SerializeField] int turnsPerLayer;
