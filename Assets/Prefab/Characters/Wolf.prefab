@@ -126,6 +126,7 @@ MonoBehaviour:
   rotationSpeed: 10
   anim: {fileID: 0}
   walkClip: {fileID: 8300000, guid: 9b3700d56e035a34db9929d19994e5ce, type: 3}
+  deadClip: {fileID: 8300000, guid: 6fc4429bb89acb24391843ec5c54bf41, type: 3}
 --- !u!82 &9075612344760275754
 AudioSource:
   m_ObjectHideFlags: 0

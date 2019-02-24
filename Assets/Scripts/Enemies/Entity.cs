@@ -20,12 +20,14 @@ public abstract class Entity : MonoBehaviour
     public Vector2Int CurrentPosition => new Vector2Int(Mathf.RoundToInt(transform.localPosition.x), Mathf.RoundToInt(transform.localPosition.z));
     public Vector2Int PreviousPosition { get; protected set; }
     public AudioClip walkClip;
+    public AudioClip deadClip;
 
     Vector3 lookDirection;
     Quaternion lookRotation;
     bool initialPositionFetched;
 
     bool isWalkSoundPlayed = false;
+    bool isDeadSoundPlayed = false;
 
     protected void Update()
     {
@@ -100,18 +102,22 @@ public abstract class Entity : MonoBehaviour
 		}
     }
 
-    void PlayWalkSound()
+    void PlaySound(AudioClip clip, ref bool soundPlayFlag)
     {
         var audioSource = GetComponent<AudioSource>();
 
-        if (audioSource != null && !isWalkSoundPlayed)
+        if (audioSource != null && !soundPlayFlag)
         {
-            audioSource.PlayOneShot(walkClip);
-            isWalkSoundPlayed = true;
-
+            audioSource.PlayOneShot(clip);
+            soundPlayFlag = true;
         }
     }
+
+    void PlayWalkSound() => PlaySound(walkClip, ref isWalkSoundPlayed);
     
+    void PlayDeadSound() => PlaySound(deadClip, ref isDeadSoundPlayed);
+
+
     protected virtual void OnMoveEnded()
     {
         IsMoving = false;
@@ -130,6 +136,7 @@ public abstract class Entity : MonoBehaviour
     {
         Died?.Invoke();
         OnMoveEnded();
+        PlayDeadSound();
     }
 
     protected bool CanMove(Vector2Int positionToCheck, out Entity entity)
