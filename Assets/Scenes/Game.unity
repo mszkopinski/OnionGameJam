@@ -173,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -310,12 +310,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",0,4,1,1,0,1,3,0,1,1,6,2]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -373,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -510,12 +514,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",1,1,5,2,6,1,6,0,1,1,6,3]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -573,7 +581,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -710,12 +718,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":3,"$rcontent":["ranks":"1|3",3,0,2]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -773,7 +785,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -910,12 +922,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",1,1,6,1,2,0,6,4,3]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -973,7 +989,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1110,12 +1126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"5|4",4,1,0,3,0,1,0,1,0,0,0,0,1,0,1,0,2,0,1,5]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -1173,7 +1193,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1310,12 +1330,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":4,"$rcontent":["ranks":"4|1",2,3,0,5]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -1373,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1510,12 +1534,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",2,1,5,1,0,0,0,3,1,1,0,1,1,1,0,5]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -1642,7 +1670,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1779,12 +1807,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":4,"$rcontent":["ranks":"2|2",3,0,5,2]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -1842,7 +1874,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -1979,12 +2011,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"4|5",4,3,0,6,2,0,0,5,0,0,0,6,6,1,1,0,0,0,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -2042,7 +2078,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2179,12 +2215,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":15,"$rcontent":["ranks":"3|5",1,1,4,1,1,0,3,0,5,0,1,1,6,2,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -2242,7 +2282,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2379,12 +2419,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"4|5",1,1,5,2,1,4,0,0,6,0,3,0,0,0,0,0,0,0,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -2442,7 +2486,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2579,12 +2623,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":27,"$rcontent":["ranks":"9|3",3,0,1,0,0,1,1,0,1,1,0,4,1,0,1,0,0,1,1,0,4,2,0,1,1,4,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -2642,7 +2690,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -2779,12 +2827,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":49,"$rcontent":["ranks":"7|7",1,0,4,1,1,1,1,1,0,0,1,1,0,0,1,1,0,1,1,0,3,0,0,0,0,0,0,1,2,0,0,0,6,0,1,1,1,1,1,1,0,0,1,1,1,1,1,0,5]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -3017,7 +3069,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3154,12 +3206,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":8,"$rcontent":["ranks":"2|4",0,0,3,0,2,0,0,4]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -3217,7 +3273,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3354,12 +3410,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":3,"$rcontent":["ranks":"3|1",3,6,2]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -3417,7 +3477,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3554,12 +3614,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":15,"$rcontent":["ranks":"5|3",1,0,0,1,0,0,0,0,0,5,0,0,1,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -3617,7 +3681,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3754,12 +3818,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":30,"$rcontent":["ranks":"5|6",1,0,5,1,1,1,1,0,1,1,0,0,1,0,0,0,2,6,1,3,1,1,1,1,4,0,1,1,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -3817,7 +3885,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -3954,12 +4022,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":4,"$rcontent":["ranks":"2|2",1,3,2,4]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -4017,7 +4089,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4154,12 +4226,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":28,"$rcontent":["ranks":"4|7",0,3,0,0,0,6,2,6,6,0,0,0,0,1,0,0,1,1,0,0,1,1,1,1,1,0,4,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -4217,7 +4293,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4354,12 +4430,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":35,"$rcontent":["ranks":"7|5",1,1,1,0,2,1,1,1,6,1,1,1,1,0,1,1,1,1,0,1,0,0,3,0,1,4,0,5,1,1,1,0,0,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -4511,7 +4591,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4648,12 +4728,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"5|4",1,0,4,1,1,0,1,1,3,0,2,6,1,0,1,1,1,4,4,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -4711,7 +4795,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -4848,12 +4932,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,1,2,4,1,1,0,0,3,0,0,0,0,0,0,4]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -4911,7 +4999,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5048,12 +5136,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":18,"$rcontent":["ranks":"3|6",0,0,0,1,0,1,0,3,0,5,1,0,0,2,0,1,0,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -5111,7 +5203,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5248,12 +5340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,0,1,1,0,3,1,1,0,0,0,4,1,1,2,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -5311,7 +5407,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5448,12 +5544,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,2,1,0,0,4,3,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -5511,7 +5611,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5648,12 +5748,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,4,1,1,3,0,0,6,1,0,6,2,1,4,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -5711,7 +5815,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -5848,12 +5952,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":18,"$rcontent":["ranks":"6|3",2,1,1,4,1,1,0,0,4,0,6,1,0,0,1,1,3,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -5959,7 +6067,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6096,12 +6204,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":18,"$rcontent":["ranks":"3|6",1,0,4,1,3,0,1,1,0,1,0,1,0,2,0,0,0,4]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -6159,7 +6271,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6303,6 +6415,11 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",3,0,0,1,1,4,1,0,0,2,4,0]}'
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1416155062
@@ -6359,7 +6476,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6496,12 +6613,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"3|4",0,4,0,1,0,3,0,2,0,5,0,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -6559,7 +6680,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6696,12 +6817,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":35,"$rcontent":["ranks":"5|7",1,1,1,1,1,3,0,1,1,1,1,1,0,1,1,1,0,6,0,0,4,2,0,0,1,1,1,1,1,1,0,0,4,1,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -6759,7 +6884,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -6896,12 +7021,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,4,1,3,0,2,0,4,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -6959,7 +7088,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7096,12 +7225,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":21,"$rcontent":["ranks":"3|7",0,0,0,0,0,0,0,0,4,4,2,1,3,0,0,0,0,0,0,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -7159,7 +7292,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7296,12 +7429,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,0,1,3,4,2,0,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -7390,7 +7527,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7527,12 +7664,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",0,5,0,3,0,0,0,6,2,4,1,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -7590,7 +7731,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7727,12 +7868,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":9,"$rcontent":["ranks":"3|3",0,0,0,3,1,2,0,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -7790,7 +7935,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -7927,12 +8072,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":6,"$rcontent":["ranks":"3|2",1,2,6,0,1,3]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -8069,7 +8218,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8099,7 +8248,7 @@ PrefabInstance:
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: moveQueue.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8206,12 +8355,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":12,"$rcontent":["ranks":"4|3",1,1,2,4,0,0,3,0,5,1,4,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -8269,7 +8422,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8406,12 +8559,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":8,"$rcontent":["ranks":"4|2",3,1,2,0,0,1,4,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -8469,7 +8626,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8606,12 +8763,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":35,"$rcontent":["ranks":"5|7",1,1,0,1,1,3,0,1,1,4,1,1,0,1,1,1,0,6,0,0,4,2,0,0,1,1,1,1,1,1,0,0,4,1,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -8669,7 +8830,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -8806,12 +8967,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":25,"$rcontent":["ranks":"5|5",0,1,0,1,1,0,3,0,2,4,4,1,1,1,0,1,1,0,1,1,1,0,0,0,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -8869,7 +9034,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9006,212 +9171,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",2,1,4,1,0,0,0,3,1,0,0,1,1,1,0,4]}'
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
---- !u!1001 &1897308547
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 62844704}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Name
-      value: Tile_Mesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189469028361202782, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_Name
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: tilePrefab
-      value: 
-      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
-        type: 3}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: layerSize.x
+      propertyPath: turnsPerLayer
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: layerSize.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: layerWidth
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: layerHeight
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[4]
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: moveQueue.Array.data[5]
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[0].Type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[0].Position.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[1].Type
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[1].Position.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[1].Position.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[2].Type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[2].Position.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: enemiesTiles.Array.data[2].Position.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":32,"$rcontent":["ranks":"8|4",5,0,0,0,1,4,6,3,1,0,6,1,1,0,1,1,0,2,1,1,0,1,1,1,4,1,1,1,0,1,1,1]}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -9269,7 +9238,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9406,12 +9375,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":16,"$rcontent":["ranks":"4|4",1,1,2,2,4,0,6,2,1,0,3,4,1,4,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -9469,7 +9442,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9606,12 +9579,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":15,"$rcontent":["ranks":"3|5",3,0,0,1,1,1,1,0,1,1,1,1,0,4,2]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -9669,7 +9646,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -9806,12 +9783,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":20,"$rcontent":["ranks":"5|4",2,4,0,0,1,1,0,0,1,3,0,0,1,1,6,0,0,5,0,0]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -9869,7 +9850,7 @@ PrefabInstance:
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3943976589228349444, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
@@ -10006,12 +9987,16 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":15,"$rcontent":["ranks":"5|3",2,1,1,4,0,4,0,6,1,0,0,1,1,3,1]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: turnsPerLayer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
