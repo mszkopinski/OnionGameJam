@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93c1b8eb42286494cbe220afa0dc1f56
+guid: 40e6f5f735c8eec40a60bc04cfd0940e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ ModelImporter:
     400000: puppetneon
     400002: //RootNode
     2100000: palette
+    2100002: puppetneonMat
     2300000: puppetneon
     3300000: puppetneon
     4300000: puppetneon
@@ -48,8 +49,8 @@ ModelImporter:
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
