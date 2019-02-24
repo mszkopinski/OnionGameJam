@@ -310,7 +310,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -321,6 +322,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &95215233
@@ -514,7 +527,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -525,6 +539,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &103549828
@@ -716,18 +742,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
+      propertyPath: turnsPerLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":3,"$rcontent":["ranks":"1|3",3,0,2]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
-        type: 3}
-      propertyPath: turnsPerLayer
-      value: 2
+      value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":3,"$rcontent":["ranks":"1|3",0,0,3]}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
@@ -922,7 +961,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -933,6 +973,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &129477303
@@ -1126,7 +1178,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -1137,6 +1190,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &156171152
@@ -1330,7 +1395,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -1341,6 +1407,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &160630961
@@ -1534,7 +1612,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -1545,6 +1624,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1 &170076733
@@ -1807,7 +1898,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -1818,6 +1910,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &443285204
@@ -2011,7 +2115,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2022,6 +2127,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &485237553
@@ -2215,7 +2332,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2226,6 +2344,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &502879168
@@ -2419,7 +2549,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2430,6 +2561,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &507534843
@@ -2623,7 +2766,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2634,6 +2778,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &519191895
@@ -2827,7 +2983,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2838,6 +2995,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1 &534669902
@@ -3206,7 +3375,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -3217,6 +3387,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &588312936
@@ -3410,7 +3592,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -3421,6 +3604,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &613685890
@@ -3614,7 +3809,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -3625,6 +3821,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &655954445
@@ -3818,7 +4026,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -3829,6 +4038,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &748024221
@@ -4022,7 +4243,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -4033,6 +4255,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &750272752
@@ -4226,7 +4460,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -4237,6 +4472,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &827792724
@@ -4430,7 +4677,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -4441,6 +4689,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &860760451
@@ -4728,7 +4988,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -4739,6 +5000,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &998201724
@@ -4932,7 +5205,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -4943,6 +5217,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1025501402
@@ -5136,7 +5422,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -5147,6 +5434,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1077751558
@@ -5340,7 +5639,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -5351,6 +5651,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1168454290
@@ -5544,7 +5856,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -5555,6 +5868,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1188214891
@@ -5748,7 +6073,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -5759,6 +6085,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1207023005
@@ -5957,12 +6295,25 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"tiles","value":{"$id":0,"$type":"TileType[,], Assembly-CSharp","$rlength":32,"$rcontent":["ranks":"8|4",5,0,0,0,1,4,6,3,1,0,6,1,1,0,1,1,0,2,1,1,0,1,1,1,4,1,1,1,0,1,1,1]}'
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1269614024
@@ -6156,7 +6507,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -6167,6 +6519,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1 &1301474394
@@ -6408,7 +6772,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -6419,6 +6784,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1388723334
@@ -6624,6 +7001,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1416155062
@@ -6817,7 +7206,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -6828,6 +7218,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1506142975
@@ -7021,7 +7423,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -7032,6 +7435,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1541941538
@@ -7225,7 +7640,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -7236,6 +7652,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1581701134
@@ -7429,7 +7857,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -7440,6 +7869,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1663495863
@@ -7633,7 +8074,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -7644,6 +8086,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1 &1691937808
@@ -7868,7 +8322,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -7879,6 +8334,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1779487889
@@ -8072,7 +8539,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -8083,6 +8551,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1790368294
@@ -8276,7 +8756,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -8287,6 +8768,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1 &1799333797
@@ -8559,7 +9052,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -8570,6 +9064,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1816286685
@@ -8763,7 +9269,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -8774,6 +9281,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1854918674
@@ -8967,7 +9486,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -8978,6 +9498,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1855647401
@@ -9171,7 +9703,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -9182,6 +9715,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1874636648
@@ -9375,7 +9920,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -9386,6 +9932,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1957985190
@@ -9579,7 +10137,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -9590,6 +10149,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1959071830
@@ -9783,7 +10354,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -9794,6 +10366,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1974493880
@@ -9987,7 +10571,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -9998,6 +10583,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &1983407225
@@ -10191,7 +10788,8 @@ PrefabInstance:
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
     - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
         type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -10202,6 +10800,18 @@ PrefabInstance:
       propertyPath: turnsPerLayer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: startTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
+    - target: {fileID: 1458550032421268419, guid: 2b20ed503cfd3ac4fa73e1dde07925d8,
+        type: 3}
+      propertyPath: endTilePrefab
+      value: 
+      objectReference: {fileID: 3670548669046538122, guid: 8cba46d82f45104488770a9ab7ea3ec9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b20ed503cfd3ac4fa73e1dde07925d8, type: 3}
 --- !u!1001 &7314619284040675936

@@ -94,6 +94,11 @@ namespace Layers
                 {
                     cachedPlayer.transform.SetParent(null);
 
+                    if (PreviousLayer == null)
+                    {
+                        cachedPlayer.transform.SetParent(((Layer) poppedLayer).transform);
+                    }
+
                     PreviousLayer?.OnLayerPopped(() =>
                     {
                         cachedPlayer.RevokeEvents();

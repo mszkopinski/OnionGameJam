@@ -244,8 +244,8 @@ namespace Layers
         }
         
         public Tile GetTileAtPosition(Vector2Int position)
-        {
-            return cachedTiles.Where(e => e != null).FirstOrDefault(e => e.CurrentPosition == position);
+    {
+            return cachedTiles.FirstOrDefault(e => e.CurrentPosition.x == position.x && e.CurrentPosition.y == position.y);
         }
 
         public Vector2Int? GetPlayerTilePosition()
