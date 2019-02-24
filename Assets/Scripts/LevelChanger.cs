@@ -36,4 +36,9 @@ public class LevelChanger : MonoBehaviour
     {
         SceneManager.LoadScene(levelToLoad);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
