@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Audio;
+using Utils;
 
 
-
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoSingleton<MonoBehaviour>
 {
-
     public Sound[] sounds;
     public static AudioManager instance;
     // Start is called before the first frame update
@@ -24,6 +23,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
+
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        //Play("");
+        Play("music");
     }
 
     public void Play(string name)
