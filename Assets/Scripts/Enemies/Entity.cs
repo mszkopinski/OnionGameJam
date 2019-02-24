@@ -140,6 +140,7 @@ public abstract class Entity : MonoBehaviour
         {
             entity = currentLayer.GetEntityAtPosition(positionToCheck);
         }
+        if (currentLayer.GetTileAtPosition(positionToCheck)) return false; 
         return Mathf.Abs(CurrentPosition.x - positionToCheck.x) + Mathf.Abs(CurrentPosition.y - positionToCheck.y) == 1;  
     }
 
