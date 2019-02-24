@@ -13,17 +13,19 @@ public abstract class Entity : MonoBehaviour
     public bool IsMoving { get; protected set; }
     
     public event Action TargetReached;
-    public event Action MoveEnded;
     public event Action MoveStarted;
     public event Action Pushed;
     public event Action Died;
 
     public Vector2Int CurrentPosition => new Vector2Int(Mathf.RoundToInt(transform.localPosition.x), Mathf.RoundToInt(transform.localPosition.z));
     public Vector2Int PreviousPosition { get; protected set; }
-    
+    public AudioClip walkClip;
+
     Vector3 lookDirection;
     Quaternion lookRotation;
     bool initialPositionFetched;
+
+    bool isWalkSoundPlayed = false;
 
     protected void Update()
     {
@@ -55,10 +57,11 @@ public abstract class Entity : MonoBehaviour
         {
             var step =  moveSpeed * Time.deltaTime;
             transform.localPosition = Vector3.MoveTowards(transform.localPosition, targetPos, step);
-        
             lookDirection = (targetPos- transform.localPosition).normalized;
             lookRotation = Quaternion.LookRotation(lookDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+
+            PlayWalkSound();
         }
     }
     
@@ -66,6 +69,7 @@ public abstract class Entity : MonoBehaviour
     {
         TargetReached?.Invoke();
         OnMoveEnded();
+        isWalkSoundPlayed = false;
     }
 
     protected virtual void OnPushed()
@@ -78,23 +82,38 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
-    public virtual void OnMoveStarted()
+    Action moveEndedCallback;
+    
+    public virtual void OnMoveStarted(Action onMoveEnded)
     {
         MoveStarted?.Invoke();
         PreviousPosition = CurrentPosition;
         IsMoving = true;
+        
         LayerManager.Instance.CurrentLayer?.RefreshPlayerPossibleMoves();
         Debug.Log("STARTED MOVING " + gameObject.name);
+        moveEndedCallback = onMoveEnded;
 		
 		if (anim != null) {
 			anim.SetBool("walk", true);
 			anim.SetBool("attack", false);
 		}
     }
+
+    void PlayWalkSound()
+    {
+        var audioSource = GetComponent<AudioSource>();
+
+        if (audioSource != null && !isWalkSoundPlayed)
+        {
+            audioSource.PlayOneShot(walkClip);
+            isWalkSoundPlayed = true;
+
+        }
+    }
     
     protected virtual void OnMoveEnded()
     {
-        MoveEnded?.Invoke();
         IsMoving = false;
         
         Debug.Log("ENDED MOVING " + gameObject.name);
@@ -103,6 +122,8 @@ public abstract class Entity : MonoBehaviour
 			anim.SetBool("walk", false);
 			anim.SetBool("attack", false);
 		}
+		
+        moveEndedCallback?.Invoke();
     }
 
     protected virtual void OnEntityDied()

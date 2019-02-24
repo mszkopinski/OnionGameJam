@@ -1,12 +1,12 @@
+using System;
 using UnityEngine;
 using Layers;
 
 public class Wolf : Entity
 {
-    public override void OnMoveStarted()
+    public override void OnMoveStarted(Action onMoveEnded)
     {
-        base.OnMoveStarted();
-        Debug.Log("-1");
+        base.OnMoveStarted(onMoveEnded);
         if (IsMoving == false) return;
         //CurrentTarget = CurrentPosition + new Vector2Int(0, 1);
         if (CheckIfPlacerIsClose() != new Vector2Int(0, 0)) {
