@@ -79,6 +79,10 @@ public class GameManager : MonoSingleton<GameManager>
         if (nextEntity == null) return;
         Debug.Log(currentLayer + " enemies queue count: " + moveQueue.Count + ". Current move " + nextEntity);
         currentMove = nextEntity;
+        if (currentMove is PlayerController)
+        {
+            currentLayer.OnTurnEnded();
+        }
         currentMove.OnMoveStarted(OnCurrentMoveEnded);
     }
 
@@ -86,7 +90,6 @@ public class GameManager : MonoSingleton<GameManager>
     {
         if (currentLayer != null)
         {
-            currentLayer.OnTurnEnded();
             StartNextMove(currentLayer);
         }
     }
