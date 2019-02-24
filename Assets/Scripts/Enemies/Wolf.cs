@@ -15,21 +15,22 @@ public class Wolf : Entity
         }        
         
         //CurrentTarget = CurrentPosition + new Vector2Int(0, 1);
+        Entity e;
         if (CheckIfPlacerIsClose() != new Vector2Int(0, 0)) {
         	Debug.Log("0");
         	CurrentTarget = CheckIfPlacerIsClose();
-        } else if (PlayerPos.x > CurrentPosition.x) {
+        } else if (PlayerPos.x > CurrentPosition.x && CanMove(CurrentPosition + Up, out e)) {
         	Debug.Log("1");
-        	CurrentTarget = CurrentPosition + new Vector2Int(1, 0);
-        } else if (PlayerPos.x < CurrentPosition.x) {
+        	CurrentTarget = CurrentPosition + Up;
+        } else if (PlayerPos.x < CurrentPosition.x && CanMove(CurrentPosition + Down, out e)) {
         	Debug.Log("2");
-        	CurrentTarget = CurrentPosition + new Vector2Int(-1, 0);
-        } else if (PlayerPos.y > CurrentPosition.y){
+        	CurrentTarget = CurrentPosition + Down;
+        } else if (PlayerPos.y > CurrentPosition.y && CanMove(CurrentPosition + Left, out e)){
         	Debug.Log("3");
-        	CurrentTarget = CurrentPosition + new Vector2Int(0, 1);
-        } else if (PlayerPos.y < CurrentPosition.y){
+        	CurrentTarget = CurrentPosition + Left;
+        } else if (PlayerPos.y < CurrentPosition.y && CanMove(CurrentPosition + Right, out e)){
         	Debug.Log("4");
-        	CurrentTarget = CurrentPosition + new Vector2Int(0, -1);
+        	CurrentTarget = CurrentPosition + Right;
         }
     }
 
@@ -39,6 +40,28 @@ public class Wolf : Entity
     		return LayerManager.Instance.cachedPlayer.CurrentPosition;
     	}
     }
+
+    private Vector2Int Up {
+    	get {
+    		return new Vector2Int(1, 0);
+    	}
+    }
+    private Vector2Int Down {
+    	get {
+    		return new Vector2Int(-1, 0);
+    	}
+    }
+    private Vector2Int Left {
+    	get {
+    		return new Vector2Int(0, 1);
+    	}
+    }
+    private Vector2Int Right {
+    	get {
+    		return new Vector2Int(0, -1);
+    	}
+    }
+
 
     private Vector2Int CheckIfPlacerIsClose() {
     	if (PlayerPos == CurrentPosition + new Vector2Int(1, 0)) {

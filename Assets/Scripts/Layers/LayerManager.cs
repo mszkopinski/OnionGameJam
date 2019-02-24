@@ -13,7 +13,8 @@ namespace Layers
         public ILayer PreviousLayer { get; private set; }
 
         public PlayerController cachedPlayer { get; set; }
-        
+        public AudioClip newFloorClip;
+
         readonly Queue<ILayer> savedLayers = new Queue<ILayer>();
         Vector3 lastPosition;
 
@@ -33,8 +34,20 @@ namespace Layers
             PopLayer();
         }
 
+        void PlayNewFloor()
+        {
+            var audioSource = GetComponent<AudioSource>();
+
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(newFloorClip);
+            }
+        }
+
         public void PopLayer(bool instant = false)
         {
+            PlayNewFloor();
+
             if (savedLayers.Count == 0) return;
             
             if (CurrentLayer != null)

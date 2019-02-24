@@ -43,5 +43,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bb74065081149b593e04a3d1540a06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilePrefab: {fileID: 0}
-  layerSize: {x: 0, y: 0}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: tiles
+      Entry: 7
+      Data: 0|TileType[,], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: ranks
+      Entry: 1
+      Data: 0|0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  moveQueue: []
+  tilePrefab: {fileID: 100002, guid: 78d572626cb06eb4daafb13bdc87ca21, type: 3}
+  startTilePrefab: {fileID: 100002, guid: f7004d677f5bdf34fb815f8a0f77e924, type: 3}
+  endTilePrefab: {fileID: 100002, guid: af94c772ed116344ab4c4042647b888e, type: 3}
+  layerWidth: 0
+  layerHeight: 0
+  turnsPerLayer: 0
