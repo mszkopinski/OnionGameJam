@@ -1,28 +1,42 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 7ad6b3746a118a344bf51a3ba3953dd9
-=======
-guid: aaf7d8556794faf4dab3f6d9bca0d85b
->>>>>>> Stashed changes
+guid: 72e82994a754aa34e91d6c9aaa16a505
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Body
-    100002: Head
-    100004: HipLeft
-    100006: HipRight
-    100008: LegLeft
-    100010: LegRight
-    100012: Neck
-    100014: //RootNode
-    400000: Body
-    400002: Head
-    400004: HipLeft
-    400006: HipRight
-    400008: LegLeft
-    400010: LegRight
-    400012: Neck
-    400014: //RootNode
+    100000: ArmLeft
+    100002: ArmLeft_end
+    100004: Body
+    100006: Body.003
+    100008: Body.003_end
+    100010: CollarLeft
+    100012: CollarRight
+    100014: Head
+    100016: Head_end
+    100018: HipLeft
+    100020: HipRight
+    100022: //RootNode
+    100024: LegLeft
+    100026: LegLeft_end
+    100028: LegRight
+    100030: LegRight_end
+    100032: Neck
+    400000: ArmLeft
+    400002: ArmLeft_end
+    400004: Body
+    400006: Body.003
+    400008: Body.003_end
+    400010: CollarLeft
+    400012: CollarRight
+    400014: Head
+    400016: Head_end
+    400018: HipLeft
+    400020: HipRight
+    400022: //RootNode
+    400024: LegLeft
+    400026: LegLeft_end
+    400028: LegRight
+    400030: LegRight_end
+    400032: Neck
     7400000: Armature|ArmatureAction
     9500000: //RootNode
   externalObjects: {}
