@@ -29,6 +29,7 @@ namespace Layers
         
         public bool IsSpawned { get; private set; }
         public List<Entity> EnemiesMoveQueue { get; } = new List<Entity>();
+        public List<Entity> DefaultEnemiesMoveQueue { get; set; } = new List<Entity>();
 
         public float Height { get; private set; }
         public int Turns => turnsPerLayer;
@@ -37,13 +38,14 @@ namespace Layers
         int previousGolemsNumber, previousWolfsNumber;
         readonly List<Tile> cachedTiles = new List<Tile>();
         readonly List<Entity> cachedEntities = new List<Entity>();
+        List<Entity> defaultCachedEntities = new List<Entity>();
         PlayerController cachedPlayer;
 
         void Awake()
         {
             elapsedTurns = 0;
         }
-        
+
         void OnValidate()
         {
             if (tiles == null || layerWidth != tiles.GetLength(0) || layerHeight != tiles.GetLength(1))
@@ -68,13 +70,16 @@ namespace Layers
             }
         }
         
-        public void OnLayerPopped(Action callback, Vector2Int layerOffset)
+        public void OnLayerPopped(Action callback, Vector2Int layerOffset, bool shouldDeactivate)
         {
             transform.DOMoveY(transform.position.y - 20f, .5f).OnComplete(() =>
             {
                 callback?.Invoke();
 
-                gameObject.SetActive(false);
+                if (shouldDeactivate)
+                {
+                    gameObject.SetActive(false);
+                }
 
                 var mainCamera = CameraController.Instance.MainCamera;
                 var newCameraPos = mainCamera.transform.position;
@@ -84,12 +89,28 @@ namespace Layers
             });
         }
 
-        public void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController = null, bool instant = false)
+        public void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController = null, bool instant = false, bool shouldSpawnTiles = true)
         {
             gameObject.SetActive(true);
             cachedPlayer = playerController;
 
-            SpawnTiles();
+            if (shouldSpawnTiles)
+            {
+                SpawnTiles();
+            }
+            else
+            {
+                ResetElapsedTurns();
+                
+//                cachedPlayer.transform.SetPosition(playerTile.Value.x, 0f, playerTile.Value.y);
+                var playerTile = GetPlayerTilePosition();
+                if (playerTile == null) return;
+                var newPos = cachedPlayer.transform.localPosition;
+                newPos.x = playerTile.Value.x;
+                newPos.z = playerTile.Value.y;
+                cachedPlayer.transform.DOLocalMove(newPos, 0f);
+            }
+            
             transform.DOLocalMove(spawnPoint, 0f)
                 .OnComplete(() =>
                 {
@@ -155,14 +176,17 @@ namespace Layers
                     {
                         EnemiesMoveQueue.Remove(entity);
                         cachedEntities.Remove(entity);
-                        GameManager.Instance.CheckEndConditions();
                     };
                 }
             });
+
+            DefaultEnemiesMoveQueue = new List<Entity>(EnemiesMoveQueue);
+            defaultCachedEntities = new List<Entity>(cachedEntities);
             
             cachedPlayer.MoveStarted += RefreshPlayerPossibleMoves;
             cachedPlayer.Pushed += RefreshPlayerPossibleMoves;
         }
+        
         
         public void RefreshPlayerPossibleMoves()
         {
@@ -239,7 +263,7 @@ namespace Layers
         
         public void SetTile(Vector2Int position, Tile tile)
         {
-            tiles[position.x, position.y] = tile.Type;
+            tiles[position.x, position.y] = TileType.Player;
             cachedTiles.Add(tile);
         }
         
@@ -260,15 +284,37 @@ namespace Layers
             });
             return pos;
         }
-        
+
+        public Vector2Int? GetEndPointPosition()
+        {
+            Vector2Int? pos = null;
+            tiles.ForEach((t, i) =>
+            {
+                if (t == TileType.EndPoint)
+                {
+                    pos = i;
+                }
+            });
+            return pos;
+        }
+
+
         public void OnTurnEnded()
         {
             ++elapsedTurns;
         }
 
-        public bool CheckEndConditions()
+        public bool CheckEndConditions(out bool isLevelPassed)
         {
+            var playerPos = LayerManager.Instance.CurrentLayer?.PlayerPosition;
+            var endPointPos = LayerManager.Instance.CurrentLayer?.GetEndPointPosition();
+            isLevelPassed = elapsedTurns >= Turns && playerPos.Equals(endPointPos);
             return elapsedTurns >= Turns;
+        }
+
+        public void ResetElapsedTurns()
+        {
+            elapsedTurns = 0;
         }
 
         protected virtual void OnTilePressed(Vector2Int tilePosition)
@@ -298,14 +344,16 @@ namespace Layers
         List<Entity> EnemiesMoveQueue { get; }
         float Height { get; }
         int Turns { get; }
-        void OnLayerPopped(Action callback, Vector2Int layerOffset);
-        void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController, bool instant = false);
+        void OnLayerPopped(Action callback, Vector2Int layerOffset, bool shouldDeactivate);
+        void OnLayerPushed(Vector3 spawnPoint, Vector3 destinationPoint, Action layerPopped, PlayerController playerController, bool instant = false, bool shouldSpawnAnything = true);
         void DeselectAllTiles();
         void SetTile(Vector2Int position, Tile tile);
         void ClearEntities();
         void RefreshPlayerPossibleMoves();
         void OnTurnEnded();
-        bool CheckEndConditions();
+        void ResetElapsedTurns();
+        Vector2Int? GetEndPointPosition();
+        bool CheckEndConditions(out bool isLevelSelected);
         Vector2Int? PlayerPosition { get; }
         Entity GetEntityAtPosition(Vector2Int position);
         Tile GetTileAtPosition(Vector2Int position);

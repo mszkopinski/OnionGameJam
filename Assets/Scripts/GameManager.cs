@@ -56,10 +56,17 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void StartNextMove(Layer layer)
     {
-        if (CheckEndConditions())
+        if (currentLayer != null && currentLayer.CheckEndConditions(out bool isLevelPassed))
         {
             currentLayer = null;
-            LayerManager.Instance.PopLayer();
+            if (!isLevelPassed)
+            {
+                LayerManager.Instance.RestartLayer();
+            }
+            else
+            {
+                LayerManager.Instance.PopLayer();
+            }
             return;
         }
 
@@ -90,11 +97,6 @@ public class GameManager : MonoSingleton<GameManager>
         {
             StartNextMove(currentLayer);
         }
-    }
-
-    public bool CheckEndConditions()
-    {
-        return currentLayer != null && currentLayer.CheckEndConditions();
     }
 
     Entity currentMove;

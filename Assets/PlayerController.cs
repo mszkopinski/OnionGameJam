@@ -28,9 +28,13 @@ public class PlayerController : Entity
     {
         base.OnTargetReached();
         var tile = LayerManager.Instance.CurrentLayer.GetTileAtPosition(CurrentPosition);
-        if (tile != null && tile.Type == TileType.EndPoint)
+        bool isLevelPassed = false;
+        if (tile != null && tile.Type == TileType.EndPoint && LayerManager.Instance.CurrentLayer?.CheckEndConditions(out isLevelPassed) == false)
         {
-            LayerManager.Instance.PopLayer();
+            if (isLevelPassed)
+            {
+                LayerManager.Instance.PopLayer();
+            }
         }
     }
 

@@ -17,6 +17,8 @@ namespace Layers
 
         readonly Queue<ILayer> savedLayers = new Queue<ILayer>();
         Vector3 lastPosition;
+        Vector3 previousSpawnPos;
+        Vector2Int lastLayerOffset;
 
         void Awake()
         {
@@ -42,6 +44,14 @@ namespace Layers
             {
                 audioSource.PlayOneShot(newFloorClip);
             }
+        }
+
+        public void RestartLayer()
+        {
+            CurrentLayer?.OnLayerPopped(() =>
+            {
+                CurrentLayer.OnLayerPushed(previousSpawnPos, lastPosition, null, cachedPlayer, false, false);
+            }, Vector2Int.zero, false);
         }
 
         public void PopLayer(bool instant = false)
@@ -78,6 +88,8 @@ namespace Layers
                 }
             }
 
+            lastLayerOffset = layerOffset;
+
             var newPosition = lastPosition;
             newPosition.x += layerOffset.x;
             newPosition.z += layerOffset.y;
@@ -86,6 +98,7 @@ namespace Layers
             var spawnPos = newPosition;
             spawnPos.x += 5f;
             spawnPos.z += 5f;
+            previousSpawnPos = spawnPos;
             
             poppedLayer.OnLayerPushed(
                 spawnPos, 
@@ -106,11 +119,11 @@ namespace Layers
                         
                         if (cachedTile != null)
                         {
-                            cachedTile.transform.SetParent(((MonoBehaviour) CurrentLayer).transform);
+                            cachedTile.transform.SetParent(((MonoBehaviour) CurrentLayer).transform);            
                             CurrentLayer.SetTile(cachedTile.CurrentPosition, cachedTile);
                             CurrentLayer.RefreshPlayerPossibleMoves();
                         }
-                    }, layerOffset);
+                    }, layerOffset, true);
                     
                     if (!instant)
                     {
