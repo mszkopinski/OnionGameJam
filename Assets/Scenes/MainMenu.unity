@@ -1185,6 +1185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1642053907991231873, guid: c14d20c14af87a24ba456291dc2da6a2,
         type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642053907991231873, guid: c14d20c14af87a24ba456291dc2da6a2,
+        type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 192fc657b6b4da94b9db9ebc442ca671, type: 3}
@@ -1197,6 +1202,16 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[0].loop
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642053907991231873, guid: c14d20c14af87a24ba456291dc2da6a2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642053907991231873, guid: c14d20c14af87a24ba456291dc2da6a2,
+        type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: Music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c14d20c14af87a24ba456291dc2da6a2, type: 3}
